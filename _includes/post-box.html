@@ -1,0 +1,26 @@
+<div class="box-text">
+
+    <!-- POST TITLE -->
+    <a href="{{ site.baseurl }}{{ include.post.url }}" class="box-titles">
+        <h1>{{ include.post.title }}: </h1>
+        <h2>{{ include.post.subtitle }}</h2>
+    </a>
+
+
+    <!-- POST DATE & READING-TIME  -->
+    <div class="box-date">
+        {% assign num_words = include.post.content | strip_html | number_of_words %}
+        {% assign WPM = 180 %}
+
+        {% if num_words < WPM %}
+        {% assign reading_time = "1" %}
+        {% else %}
+        {% assign reading_time = num_words | divided_by:WPM | round %}
+        {% endif %}
+
+        {% assign reading_time = reading_time | append: " min read" %}
+
+        {{ include.post.date | date: "%b %e, %Y" }} &#160;<b>&#183;</b>&#160; {{ reading_time }}
+    </div>
+
+</div>

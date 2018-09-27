@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-27T03:07:20+01:00</updated><id>http://localhost:4000/</id><title type="html">tpvasconcelos.github.io</title><subtitle>Physics, math, tech</subtitle><entry><title type="html">Data science for parking availability prediction</title><link href="http://localhost:4000/Save-a-Space/" rel="alternate" type="text/html" title="Data science for parking availability prediction" /><published>2016-11-04T00:00:00+00:00</published><updated>2016-11-04T00:00:00+00:00</updated><id>http://localhost:4000/Save-a-Space</id><content type="html" xml:base="http://localhost:4000/Save-a-Space/">&lt;p&gt;Accelogress Ltd is a UK based software consultancy company developing
+mobile app solutions using data analysis, machine learning, and API
+technologies. Accelogress’ project,
+&lt;a href=&quot;https://save-a-space.com&quot;&gt;Save-a-Space&lt;/a&gt;, introduces a cloud-based
+mobile marketplace for real-time booking of parking spaces, which
+optimizes parking management (for parking operators) and drivers’
+experience (for the end-users).  Save-a-Space’s mobile app allows drivers
+to easily find and book the most suitable parking space, according to
+their personal preferences.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/saveaspacesearch.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;The Save-a-Space mobile app will automatically find the best parking space according to user preferences.&lt;/figcaption&gt;
+
+&lt;p&gt;During my summer internship at Accelogress Ltd, I was trusted with
+building the engine and API that deals with the real-time analysis of
+parking data and occupancy prediction for their Save-a-Space project.
+The API would have to allow for a simple but flexible access to
+historical data, as well availability predictions.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-api&quot;&gt;The API&lt;/h1&gt;
+
+&lt;p&gt;Since the prediction engine was going to be built with Python, it made
+sense to also build the API with some Python framework for easy
+integration of the two. The API was built using
+&lt;a href=&quot;http://www.django-rest-framework.org&quot;&gt;Django REST framework&lt;/a&gt;, which can
+quietly sit on top of a &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt; server.
+Having this integrated setup also allowed for scheduled remote updating
+of prediction datasets. The API allows applications and end-users to
+query historical data for any car park, as well as predictions of future
+occupancy. The Django server was mounted onto a
+&lt;a href=&quot;https://gunicorn.org/&quot;&gt;Gunicorn&lt;/a&gt; which, in turn, runs on an
+&lt;a href=&quot;https://www.nginx.com/&quot;&gt;nginx&lt;/a&gt; server. The whole environment runs on a
+&lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; container, which makes it easy and
+quick to go from development into a production environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/SASserverpipeline.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Diagram of the server setup used.&lt;/figcaption&gt;
+
+&lt;h1 id=&quot;the-prediction-engine&quot;&gt;The Prediction Engine&lt;/h1&gt;
+
+&lt;p&gt;Thanks to Google’s &lt;a href=&quot;http://scikit-learn.org&quot;&gt;scikit-learn&lt;/a&gt; machine
+learning library, the implementation of the prediction algorithm was one
+of the most straight forward parts of this project. The goal was to
+predict the occupancy of a car-park at some point in the future. We had
+years worth of parking data, which was important for testing different
+algorithms and optimizing the ones that performed best.
+I chose the &lt;a href=&quot;https://en.wikipedia.org/wiki/Mean_squared_error&quot;&gt;&lt;em&gt;mean-squared-error&lt;/em&gt;&lt;/a&gt;
+(MSE) to be our performance metric. What we need now is to minimise
+the MSE of our algorithm, as a MSE of zero represents a perfect estimator.&lt;/p&gt;
+
+&lt;p&gt;The algorithm can take as input parameters like: month; week-day; hour;
+bank holidays (True/False); etc… and outputs the predicted
+availability. The choice of input parameters affects the
+performance of the algorithm. To find the optimal machine learning
+&lt;em&gt;smoothie&lt;/em&gt;, I ran a brute-force test with multiple algorithms for
+multiple car parks with different combinations of input parameters,
+with the goal of minimizing the MSE. In the end, I found the
+&lt;a href=&quot;http://scikit-learn.org/stable/modules/tree.html&quot;&gt;Decision Tree Algorithm&lt;/a&gt;
+to be the most suitable and reliable estimator. Decision trees allow
+us to easily visualise the underlying model, which can be very useful to
+communicate the factors that most influence the occupancy of a car park.
+This can be especially useful for parking operators. Each algorithm
+will have its own extra set of parameters that can be extremely useful for
+minimizing the MSE. In the case of trees, we can use the &lt;em&gt;maximum-depth&lt;/em&gt;
+to limit its size and prevent
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Overfitting&quot;&gt;overfitting&lt;/a&gt;. After tuning
+each ingredient I was able to get the MSE of our algorithm to be as low
+as 0.37%!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/sashistvspred.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;Comparison of the predicted data (Orange) and real data (Blue)&lt;/figcaption&gt;
+
+&lt;h2 id=&quot;working-example&quot;&gt;Working example&lt;/h2&gt;
+
+&lt;p&gt;This is a quick working example of how to get started with the tree
+classifier from scikit-learn. In this first code block I am generating
+some example data that we will need to train and test our chosen algorithm.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;SAMPLE_SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;896&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# 28 * 6&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 4 weeks range: 28 days times 2*pi radians&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;t_range&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;56&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SAMPLE_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Generate a sin wave for the occupancy percentage&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;occupancy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_range&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Reduce occupancy on weekends&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;occupancy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SAMPLE_SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Add some random noise&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;occupancy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.95&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SAMPLE_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Round the occupancy percentage to the nearest integer&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;occupancy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;occupancy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Convert from radians to 'days' and&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# clip days of week between 0 and 6&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;t_range_cliped&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_range&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;weekdays&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_range_cliped&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# transform fractional part of the day to an hour&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_range_cliped&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The code above generates an hypothetical dataset for a car park that peaks
+at mid-day and has less occupancy on weekends. In this example I generated
+4 weeks of data. The image bellow shows the first 14 days of the generated
+dataset.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/sklearnSAS.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;figcaption&gt;The first 14 days of generated example data.&lt;/figcaption&gt;
+
+&lt;p&gt;As you’ll see bellow, getting started with the sklearn library is extremely
+easy. This is a very simple example of how we could use the data generated
+above to make availability predictions in the future. In the example bellow
+the Decision Tree Classifier predicts that on Sundays at mid-day the
+occupancy is around 48% and on Tuesdays at 9am is around 70%. Comparing
+this prediction with the plot above, we see that the tree was accurate.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.tree&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Create and instance of DecisionTreeClassifier&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Input parameters (features): day-of-week, hour-of-day&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;input_features&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weekdays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Train the classifier&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_features&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;occupancy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Make a prediction for:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#   - Sunday at 12pm: [6, 12]&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#   - Tuesday at 9am: [1, 9]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;prediction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prediction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Projects" /><category term="Machine-Learning" /><category term="projects" /><category term="Python" /><category term="API" /><summary type="html">Accelogress Ltd is a UK based software consultancy company developing mobile app solutions using data analysis, machine learning, and API technologies. Accelogress’ project, Save-a-Space, introduces a cloud-based mobile marketplace for real-time booking of parking spaces, which optimizes parking management (for parking operators) and drivers’ experience (for the end-users). Save-a-Space’s mobile app allows drivers to easily find and book the most suitable parking space, according to their personal preferences.</summary></entry><entry><title type="html">Test post: Maths, Equations and MathJax integration</title><link href="http://localhost:4000/tests/math/" rel="alternate" type="text/html" title="Test post: Maths, Equations and MathJax integration" /><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><id>http://localhost:4000/tests/Test-Maths</id><content type="html" xml:base="http://localhost:4000/tests/math/">&lt;h1 id=&quot;frobenius-companion&quot;&gt;Frobenius’ companion&lt;/h1&gt;
+
+&lt;p&gt;The roots of an &lt;script type=&quot;math/tex&quot;&gt;m^{\text{th}}&lt;/script&gt; degree monic polynomial, of the form &lt;script type=&quot;math/tex&quot;&gt;x^m + c_{m-1} x^{m-1} + \cdots + c_1 x + c_0&lt;/script&gt;, are given by the eigenvalues of the “Frobenius companion matrix” [1]&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{bmatrix}
+    0 &amp; 0 &amp; \dots &amp; 0 &amp; -c_{0} \\
+    1 &amp; 0 &amp; \dots &amp; 0 &amp; -c_{1} \\
+    0 &amp; 1 &amp; \dots &amp; 0 &amp; -c_{2} \\
+    \vdots  &amp; \vdots  &amp; \ddots  &amp; \vdots  &amp; \vdots \\
+    0 &amp; 0 &amp; \dots &amp; 1 &amp; -c_{m-1}
+\end{bmatrix} \, .
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;the-second-virial-coefficient-a-bounded-mie-potential&quot;&gt;The second virial coefficient a bounded Mie potential&lt;/h1&gt;
+
+&lt;p&gt;A bounded Mie potential is a continuous analog of the (discontinuous)
+penetrable hard-sphere/top-hat potential&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+	\phi(r) =
+	\begin{cases}
+  		\epsilon_r &amp; 0 &lt; r &lt; \sigma \\[2ex]
+		- \epsilon_a &amp; \sigma &lt; r &lt; \sigma + \Delta \\[2ex]
+    	0 &amp; r &gt; \sigma + \Delta \\
+	\end{cases}
+	\, .
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;For a bounded Mie potential of the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	\phi(r) =
+	\lambda
+	\left[
+	\left(\frac{1}{a^2 + r^2} \right)^{m/2} -
+	\left(\frac{1}{a^2 + r^2} \right)^{n/2}
+	\right]
+	\, ,
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;the second virial coefficient can be shown to be [2]&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+	b_2(T)
+	\simeq
+	- 2 \pi
+	\left\{ - \frac{\left( 1 - a^2 \right)^{3/2}}{3}
+	+
+	\sum_{k=1}^{\infty}
+	\frac{\left( 1 - a^2 \right)^{(3 - k n)/2}}{k! (k n - 3)  \alpha^{k/2}} \,
+	H_k \left( \frac{1}{2\sqrt{\alpha}} \right) \,
+	_2F_1
+	\left(
+	\frac{k n}{2},
+	\frac{k n - 3}{2};
+	\frac{k n - 1}{2};
+	\frac{a^2}{a^2 - 1}
+	\right)
+	\right\}
+	\, ,
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;in the &lt;script type=&quot;math/tex&quot;&gt;r \rightarrow 0&lt;/script&gt; limit, where &lt;script type=&quot;math/tex&quot;&gt;H_k(s)&lt;/script&gt; is the ordinary
+Hermite polynomial and &lt;script type=&quot;math/tex&quot;&gt;_2F_1(a,b;c;z)&lt;/script&gt; the hypergeometric function.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Interestingly,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{split}
+	\sum_{k=1}^{\infty} \frac{\Omega^k}{k!} \left(x^{n} - x^{2n} \right)^k
+	&amp;= \left[\frac{1}{1!}\Omega^1\right]x^{n}
+	\\&amp;+ \left[\frac{1}{2!}\Omega^2-\frac{1}{1!}\Omega^1\right]x^{2n}
+	\\&amp;+ \left[\frac{1}{3!}\Omega^3-\frac{2}{2!}\Omega^2\right]x^{3n}
+	\\&amp;+ \left[\frac{1}{4!}\Omega^4-\frac{3}{3!}\Omega^3+\frac{1}{2!}\Omega^2\right]x^{4n}
+	\\&amp;+ \left[\frac{1}{5!}\Omega^5-\frac{4}{4!}\Omega^4+\frac{3}{3!}\Omega^3\right]x^{5n}
+	\\&amp;+ \left[\frac{1}{6!}\Omega^6-\frac{5}{5!}\Omega^5+\frac{6}{4!} \Omega^4-\frac{1}{3!}\Omega^3\right]x^{6n}
+	\\&amp;+ \left[\frac{1}{7!}\Omega^7-\frac{6}{6!}\Omega^6+\frac{10}{5!}\Omega^5-\frac{4}{4!}\Omega^4\right]x^{7n}
+	\\&amp;+ \left[\frac{1}{8!}\Omega^8-\frac{7}{7!}\Omega^7+\frac{15}{6!}\Omega^6-\frac{10}{5!}\Omega^5+\frac{1}{4!}\Omega^4\right]x^{8n}
+	\\&amp;+ ~ \cdots
+	\\&amp;= \sum_{k=1}^{\infty} S_{k}(\Omega) x^{kn}
+	\, ,
+\end{split}
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{split}
+	S_{k}(\Omega)
+	&amp;=
+	\begin{cases}
+		\sum_{j=k/2}^{k} \frac{(-1)^j ~ \Omega^j}{j!} \binom{j}{k-j}  &amp; \text{if $k$ is even} \\[2ex]
+		\sum_{j=(k+1)/2}^{k} \frac{(-1)^{j+1} ~ \Omega^j}{j!} \binom{j}{k-j} &amp; \text{if $k$ is odd} \\
+	\end{cases}
+    \\&amp;= H_k\left(\sqrt{\Omega/4}\right) \frac{\Omega^{k/2}}{k!} ~.
+\end{split}
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;H. Fatoorehchi and H. Abolghasemi, Journal of the Egyptian Mathematical Society, &lt;strong&gt;22&lt;/strong&gt;(3):524 – 528 (2014); &lt;a href=&quot;https://doi.org/10.1016/j.joems.2013.12.018&quot;&gt;https://doi.org/10.1016/j.joems.2013.12.018&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;D. M. Heyes and T. Pereira de Vasconcelos, The Journal of Chemical Physics &lt;strong&gt;147&lt;/strong&gt;, 214504 (2017); &lt;a href=&quot;https://doi.org/10.1063/1.5006035&quot;&gt;https://doi.org/10.1063/1.5006035&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Tests" /><category term="tutorial" /><category term="jekyll" /><category term="markdown" /><category term="docs" /><category term="test" /><category term="design test" /><category term="edge case" /><category term="test" /><category term="MathJax" /><category term="Maths" /><category term="equations" /><summary type="html">Frobenius’ companion</summary></entry><entry><title type="html">Test post: Markdown</title><link href="http://localhost:4000/tests/markdown/" rel="alternate" type="text/html" title="Test post: Markdown" /><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><id>http://localhost:4000/tests/Test-Markdown</id><content type="html" xml:base="http://localhost:4000/tests/markdown/">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*[ABBR]: Abbreviation definition
+
+Abbreviated Text: ABBR
+
+Auto link: &amp;lt;http://example.com&amp;gt;
+
+Inline `code`
+
+Bold Italic Text: ***bold italic***, **_bold italic_** and ***normal text
+
+Bold: **bold**, ***bold italic***, **_bold italic_**, and **normal text
+
+Escaped Character: \* \_ \` \&amp;amp; \[ \] \&amp;lt; \&amp;gt; \! \# \\ \&quot; \' \. \- \( \) \{ \} \: \| \~
+
+Explicit Link : [Example](http://example.com)
+
+Footnote Reference[^1]
+
+Italic Text: *italic*, _italic_ and this one is not *italic
+
+Image: ![My image](http://www.foo.bar/image.png)
+
+Inline HTML: &amp;lt;b&amp;gt;bold&amp;lt;/b&amp;gt; &amp;amp;nbsp; &amp;amp;#10; &amp;amp;#x0a;
+
+Hard Break Spaces: at end of line
+    that has a continuation.
+
+Mail Link: &amp;lt;me@example.com&amp;gt;
+
+Smart Characters: ... -- --- a's b's. . .
+
+Smart quotes 'this is a quote' &quot;this is a quote&quot;
+
+Strikethrough: ~~strikethrough **strikethrough bold** *strikethrough italic* _strikethrough italic_ ***strikethrough bold italic*** **_strikethrough bold italic_**~~
+
+Subscript: ~subscript~
+
+Superscript ^superscript^
+
+Underline/Inserted: ++underline++
+
+WikiLink: [[Link address and Link Text]]  Creole syntax: [[Link address|Link text]]  [[Link address#anchor|Link text]] GitHub syntax: [[Link text|Link address]] [[Link text|Link address#anchor]]
+
+&amp;lt;!-- Comment --&amp;gt;
+
+&amp;gt; block quote
+
+* bullet list
+1. List Item 1
+* [ ] task item
+* [x] task item (done)
+* [X] task item (done)
+
+[^1]: Footnote text
+
+[Reference]: http://example.com#anchor-reference  &quot;Title&quot;
+Reference link: [link text][reference] [reference].
+Reference image: ![alt text][reference] ![reference].
+
+
+Term 1
+:   Definition 1.1
+:   Definition 1.2
+
+Term 2
+:   Definition 2.2
+
+| Header Row 1 Cell 1 | Header Row 1 Cell 2 |
+| Header Row 2 Cell 1 | Header Row 2 Cell 2 |
+| Header Row 2 Cell 1 | Header Row 2 Cell 2 |
+|:--------------------|:-------------------:|
+| Row 1 Cell 1        |    Row 1 Cell 2     |
+| Row 2 Cell 1        |    Row 2 Cell 2     |
+| Row 2 Cell 1        |    Row 2 Cell 2     |
+[Table Caption]
+
+
+    Verbatim Block
+
+# First level title
+
+First level title
+=================
+
+## Second level title
+
+Second level title
+------------------
+
+### Third level title
+
+#### Fourth level title
+
+##### Fifth level title
+
+###### Sixth level title
+
+* * *
+
+&amp;lt;div&amp;gt;
+Block
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Abbreviated Text: &lt;abbr title=&quot;Abbreviation definition&quot;&gt;ABBR&lt;/abbr&gt;&lt;/p&gt;
+
+&lt;p&gt;Auto link: &lt;a href=&quot;http://example.com&quot;&gt;http://example.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Inline &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bold Italic Text: &lt;strong&gt;&lt;em&gt;bold italic&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;bold italic&lt;/em&gt;&lt;/strong&gt; and ***normal text&lt;/p&gt;
+
+&lt;p&gt;Bold: &lt;strong&gt;bold&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;bold italic&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;bold italic&lt;/em&gt;&lt;/strong&gt;, and **normal text&lt;/p&gt;
+
+&lt;p&gt;Escaped Character: * _ ` \&amp;amp; [ ] &amp;lt; &amp;gt; ! # \ &quot; ' . - ( ) { } : | ~&lt;/p&gt;
+
+&lt;p&gt;Explicit Link : &lt;a href=&quot;http://example.com&quot;&gt;Example&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Footnote Reference&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Italic Text: &lt;em&gt;italic&lt;/em&gt;, &lt;em&gt;italic&lt;/em&gt; and this one is not *italic&lt;/p&gt;
+
+&lt;p&gt;Image: &lt;img src=&quot;http://www.foo.bar/image.png&quot; alt=&quot;My image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Inline HTML: &lt;b&gt;bold&lt;/b&gt;   
+ 
+&lt;/p&gt;
+
+&lt;p&gt;Hard Break Spaces: at end of line
+    that has a continuation.&lt;/p&gt;
+
+&lt;p&gt;Mail Link: &lt;a href=&quot;mailto:me@example.com&quot;&gt;me@example.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Smart Characters: … – — a’s b’s. . .&lt;/p&gt;
+
+&lt;p&gt;Smart quotes ‘this is a quote’ “this is a quote”&lt;/p&gt;
+
+&lt;p&gt;Strikethrough: &lt;del&gt;strikethrough &lt;strong&gt;strikethrough bold&lt;/strong&gt; &lt;em&gt;strikethrough italic&lt;/em&gt; &lt;em&gt;strikethrough italic&lt;/em&gt; &lt;strong&gt;&lt;em&gt;strikethrough bold italic&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;&lt;em&gt;strikethrough bold italic&lt;/em&gt;&lt;/strong&gt;&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;Subscript: ~subscript~&lt;/p&gt;
+
+&lt;p&gt;Superscript ^superscript^&lt;/p&gt;
+
+&lt;p&gt;Underline/Inserted: ++underline++&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;WikiLink: [[Link address and Link Text]]  Creole syntax: [[Link address&lt;/td&gt;
+      &lt;td&gt;Link text]]  [[Link address#anchor&lt;/td&gt;
+      &lt;td&gt;Link text]] GitHub syntax: [[Link text&lt;/td&gt;
+      &lt;td&gt;Link address]] [[Link text&lt;/td&gt;
+      &lt;td&gt;Link address#anchor]]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- Comment --&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;block quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;bullet list
+    &lt;ol&gt;
+      &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] task item&lt;/li&gt;
+  &lt;li&gt;[x] task item (done)&lt;/li&gt;
+  &lt;li&gt;[X] task item (done)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reference link: &lt;a href=&quot;http://example.com#anchor-reference&quot; title=&quot;Title&quot;&gt;link text&lt;/a&gt; &lt;a href=&quot;http://example.com#anchor-reference&quot; title=&quot;Title&quot;&gt;reference&lt;/a&gt;.
+Reference image: &lt;img src=&quot;http://example.com#anchor-reference&quot; alt=&quot;alt text&quot; title=&quot;Title&quot; /&gt; &lt;img src=&quot;http://example.com#anchor-reference&quot; alt=&quot;reference&quot; title=&quot;Title&quot; /&gt;.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Definition 1.1&lt;/dd&gt;
+  &lt;dd&gt;Definition 1.2&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Definition 2.2&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;| Header Row 1 Cell 1 | Header Row 1 Cell 2 |
+| Header Row 2 Cell 1 | Header Row 2 Cell 2 |
+| Header Row 2 Cell 1 | Header Row 2 Cell 2 |
+|:——————–|:——————-:|
+| Row 1 Cell 1        |    Row 1 Cell 2     |
+| Row 2 Cell 1        |    Row 2 Cell 2     |
+| Row 2 Cell 1        |    Row 2 Cell 2     |
+[Table Caption]&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Verbatim Block
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;first-level-title&quot;&gt;First level title&lt;/h1&gt;
+
+&lt;h1 id=&quot;first-level-title-1&quot;&gt;First level title&lt;/h1&gt;
+
+&lt;h2 id=&quot;second-level-title&quot;&gt;Second level title&lt;/h2&gt;
+
+&lt;h2 id=&quot;second-level-title-1&quot;&gt;Second level title&lt;/h2&gt;
+
+&lt;h3 id=&quot;third-level-title&quot;&gt;Third level title&lt;/h3&gt;
+
+&lt;h4 id=&quot;fourth-level-title&quot;&gt;Fourth level title&lt;/h4&gt;
+
+&lt;h5 id=&quot;fifth-level-title&quot;&gt;Fifth level title&lt;/h5&gt;
+
+&lt;h6 id=&quot;sixth-level-title&quot;&gt;Sixth level title&lt;/h6&gt;
+
+&lt;hr /&gt;
+
+&lt;div&gt;
+Block
+&lt;/div&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Footnote text&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Tests" /><category term="test" /><category term="edge case" /><summary type="html">``` *[ABBR]: Abbreviation definition</summary></entry><entry><title type="html">Test post: Lists</title><link href="http://localhost:4000/tests/lists/" rel="alternate" type="text/html" title="Test post: Lists" /><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><id>http://localhost:4000/tests/Test-List</id><content type="html" xml:base="http://localhost:4000/tests/lists/">&lt;h1 id=&quot;the-basics&quot;&gt;The Basics&lt;/h1&gt;
+
+&lt;p&gt;The basics consist of &lt;strong&gt;ordered list&lt;/strong&gt;, &lt;strong&gt;unordered list&lt;/strong&gt; and &lt;strong&gt;nested list&lt;/strong&gt;.
+First, have a look at Markdown syntax used in this first example.
+Then, check how the final result (the rendered HTML) looks like.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;**Ordered lists** start with an integer, followed by a full stop and a space
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+1. Integer nec odio.
+1. Praesent libero.
+
+**Unordered lists** can start with `+`, `-`, or `*`
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+- Integer nec odio.
+- Praesent libero.
+
+**Nested lists** are created by indenting each sub-list with a `tab`
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - Integer nec odio.
+        - Nulla quis sem at nibh elementum imperdiet.
+        -  Duis sagittis ipsum.
+    - Sed nisi.
+1. Praesent libero.
+    1. Sed cursus ante dapibus diam.
+        1. Nulla quis sem at nibh elementum imperdiet.
+        1. Duis sagittis ipsum.
+1. Fusce nec tellus sed augue semper porta.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Ordered lists&lt;/strong&gt; start with an integer, followed by a full stop and a space&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Integer nec odio.&lt;/li&gt;
+  &lt;li&gt;Praesent libero.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Unordered lists&lt;/strong&gt; can start with &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li&gt;
+  &lt;li&gt;Integer nec odio.&lt;/li&gt;
+  &lt;li&gt;Praesent libero.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Nested lists&lt;/strong&gt; are created by indenting each sub-list with a &lt;code class=&quot;highlighter-rouge&quot;&gt;tab&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    &lt;ul&gt;
+      &lt;li&gt;Integer nec odio.
+        &lt;ul&gt;
+          &lt;li&gt;Nulla quis sem at nibh elementum imperdiet.&lt;/li&gt;
+          &lt;li&gt;Duis sagittis ipsum.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sed nisi.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Praesent libero.
+    &lt;ol&gt;
+      &lt;li&gt;Sed cursus ante dapibus diam.
+        &lt;ol&gt;
+          &lt;li&gt;Nulla quis sem at nibh elementum imperdiet.&lt;/li&gt;
+          &lt;li&gt;Duis sagittis ipsum.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fusce nec tellus sed augue semper porta.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;other-features&quot;&gt;Other features&lt;/h1&gt;
+
+&lt;p&gt;You can also nest other objects inside lists.
+Bear in mind that these features are, at most, experimental.
+You will probably encounter weird behaviour experimenting with different combinations of these.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. This is the first item in this list. I could make one single long paragraph.
+    Blah blah blah... Words words words... This is done by omitting two consecutive new lines.
+
+    But I can also create a new paragraph that is still a member of item-1.
+    You can do this by simply entering by two new lines and a `tab`.
+
+    1. Images can also be nested into list-items:
+
+        {% assign image = page.images[0] %}
+        {% include image.html image=image %}
+
+1. You can also embed MathJax equations in a list
+
+    - Here is fundamental theorem of calculus:
+
+        $$
+        \int_a^b f(x) = \big[ F(x) \big]_a^b = F(b) - F(a)
+        $$
+
+    - And here, a very long equation that does not fit in the list
+
+        \\[
+        \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+        = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) =
+        (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+          \phi(e_1, e_1) &amp;amp; \cdots &amp;amp; \phi(e_1, e_n) \\
+          \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+          \phi(e_n, e_1) &amp;amp; \cdots &amp;amp; \phi(e_n, e_n)
+        \end{array} \right)
+        \left( \begin{array}{c}
+          y_1 \\
+          \vdots \\
+          y_n
+        \end{array} \right)
+        \\]
+
+1. Similarly, you can also nest code blocks.
+
+    1. An example from [numba.pydata.org](https://numba.pydata.org/)
+
+        ```python
+        from numba import jit
+        from numpy import arange
+
+        # jit decorator tells Numba to compile this function.
+        # The argument types will be inferred by Numba when function is called.
+        @jit
+        def sum2d(arr):
+            M, N = arr.shape
+            result = 0.0
+            for i in range(M):
+                for j in range(N):
+                    result += arr[i,j]
+            return result
+
+        a = arange(9).reshape(3,3)
+        print(sum2d(a))
+        ```
+
+    1. A long string that does not fit in this list
+
+        ```python
+        long_string = &quot;Sed lacinia orci in purus feugiat tristique. Nam efficitur aliquet convallis. Fusce nec tellus sed augue semper porta. Nulla quis sem at nibh elementum imperdiet.&quot;
+        ```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;This is the first item in this list. I could make one single long paragraph.
+ Blah blah blah… Words words words… This is done by omitting two consecutive new lines.&lt;/p&gt;
+
+    &lt;p&gt;But I can also create a new paragraph that is still a member of item-1.
+ You can do this by simply entering by two new lines and a &lt;code class=&quot;highlighter-rouge&quot;&gt;tab&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Images can also be nested into list-items:&lt;/p&gt;
+
+        &lt;p&gt;&lt;img src=&quot;/files/Tutorials/Lists/Lenna.png&quot; alt=&quot;Lena Söderberg, by Dwight Hooker.&quot; title=&quot;Lenna&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can also embed MathJax equations in a list&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Here is fundamental theorem of calculus:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_a^b f(x) = \big[ F(x) \big]_a^b = F(b) - F(a)&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;And here, a very long equation that does not fit in the list&lt;/p&gt;
+
+        &lt;p&gt;\[
+  \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) =
+  (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+    \phi(e_1, e_1) &amp;amp; \cdots &amp;amp; \phi(e_1, e_n) &lt;br /&gt;
+    \vdots &amp;amp; \ddots &amp;amp; \vdots &lt;br /&gt;
+    \phi(e_n, e_1) &amp;amp; \cdots &amp;amp; \phi(e_n, e_n)
+  \end{array} \right)
+  \left( \begin{array}{c}
+    y_1 &lt;br /&gt;
+    \vdots &lt;br /&gt;
+    y_n
+  \end{array} \right)
+  \]&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Similarly, you can also nest code blocks.&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;An example from &lt;a href=&quot;https://numba.pydata.org/&quot;&gt;numba.pydata.org&lt;/a&gt;&lt;/p&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numba&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jit&lt;/span&gt;
+ &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arange&lt;/span&gt;
+
+ &lt;span class=&quot;c&quot;&gt;# jit decorator tells Numba to compile this function.&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# The argument types will be inferred by Numba when function is called.&lt;/span&gt;
+ &lt;span class=&quot;nd&quot;&gt;@jit&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sum2d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+         &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+             &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+
+ &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sum2d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;A long string that does not fit in this list&lt;/p&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;n&quot;&gt;long_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Sed lacinia orci in purus feugiat tristique. Nam efficitur aliquet convallis. Fusce nec tellus sed augue semper porta. Nulla quis sem at nibh elementum imperdiet.&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;issues-and-limitations&quot;&gt;Issues and limitations&lt;/h1&gt;
+
+&lt;p&gt;Unfortunately not all objects behave as expected.
+    &lt;strong&gt;Images&lt;/strong&gt;, for instance, do not render captions well.
+    The caption lands outside the list-item, breaking the list.&lt;/p&gt;</content><author><name></name></author><category term="Tests" /><category term="test" /><category term="edge case" /><summary type="html">The Basics</summary></entry><entry><title type="html">Test post: Images</title><link href="http://localhost:4000/tests/images/" rel="alternate" type="text/html" title="Test post: Images" /><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><id>http://localhost:4000/tests/Test-Images</id><content type="html" xml:base="http://localhost:4000/tests/images/">&lt;p&gt;&lt;img src=&quot;/assets/images/Lenna.png&quot; alt=&quot;Lena Söderberg, by Dwight Hooker.&quot; title=&quot;Lenna&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name></name></author><category term="Tests" /><category term="test" /><category term="edge case" /><summary type="html"></summary></entry><entry><title type="html">Test post: Code</title><link href="http://localhost:4000/tests/code/" rel="alternate" type="text/html" title="Test post: Code" /><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><id>http://localhost:4000/tests/Test-Code</id><content type="html" xml:base="http://localhost:4000/tests/code/">&lt;p&gt;In python &lt;code class=&quot;highlighter-rouge&quot;&gt;__all__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__author__&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;__version__&lt;/code&gt; are called module level “dunders”.
+From PEP8 we know to use &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt; for the first argument of instance methods, and &lt;code class=&quot;highlighter-rouge&quot;&gt;cls&lt;/code&gt; for the first argument of class methods.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;long_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Sed lacinia orci in purus feugiat tristique. Nam efficitur aliquet convallis. Fusce nec tellus sed augue semper porta. Nulla quis sem at nibh elementum imperdiet.&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;# parse through file list in the current directory&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;directory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;renamefiles.py&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listdir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;directory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;directory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;newfilename&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;directory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newfilename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Tests" /><category term="test" /><category term="edge case" /><summary type="html">In python __all__, __author__, and __version__ are called module level “dunders”. From PEP8 we know to use self for the first argument of instance methods, and cls for the first argument of class methods.</summary></entry></feed>

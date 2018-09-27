@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>
+        {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}
+    </title>
+
+    {% include meta.html %}
+
+    {% include scripts.html %}
+
+</head>
+
+<body>
+
+<div id="grid-sidebarbody">
+
+    {% include header.html %}
+
+    <!-- ************************************************** -->
+    <div>
+
+        {{ content }}
+
+    </div>
+    <!-- ************************************************** -->
+
+</div>
+
+<div class="wrapper-footer">
+    <footer class="footer">
+        <!--{% include svg-icons.html %}-->
+    </footer>
+</div>
+
+{% include analytics.html %}
+</body>
+</html>

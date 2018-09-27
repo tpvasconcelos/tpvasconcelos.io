@@ -1,0 +1,23 @@
+---
+layout: page
+
+title: $$\boldsymbol{P = NP}$$
+
+subtitle: Personal Note Pad
+
+permalink: /blog/
+
+---
+
+
+<div class="posts">
+
+    {% for post in site.posts %}
+
+        {% include post-box.html post=post %}
+
+    {% endfor %}
+
+</div>
+
+<hr>
