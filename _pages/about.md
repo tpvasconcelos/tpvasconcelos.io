@@ -20,7 +20,7 @@ permalink: /about/
 **First Class Honours degree in Physics**.
 4. I have [**research experience**](/research) in theoretical statistical
 mechanics and molecular dynamics.
-5. I've also acquired a comprehensive set of [**computing skills**](/computing-experience/) for
+5. I have acquired a comprehensive set of [**computing skills**](/computing-experience/) for
 scientific computing, data analysis, and web development.
 
 

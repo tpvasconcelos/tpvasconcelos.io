@@ -23,8 +23,9 @@ permalink: /research/
     analytic expressions in the form of series expansions for the second
     virial coefficient of bounded Mie potentials. This generalisation of
     the Mie potential allows for potential functions which are finite
-    at the origin. The convergence properties and considerations of
-    those parameter which give thermodynamic stability are investigated.
+    at the origin (_"bounded"_). We also investigate the convergence
+    properties of the series expansions, and considerations of
+    parameters which give rise to thermodynamic stability.
 
 
 
@@ -35,22 +36,20 @@ permalink: /research/
 
 My research efforts were focused on a "bounded potential model" commonly
 used to describe the interaction between particles in colloid and
-polymer systems. I started by deriving several properties that this
-potential should satisfy. However, the primary goal of the project was
-to derive a series expansion solution to the _second virial coefficient_
-of this bounded potential. Although I successfully derived a series
-expansion in terms of orthogonal polynomials, the convergence of this
-series was too slow for practical applications.
+polymer systems. I successfully derived the solution to the
+_second virial coefficient_ of this bounded potential as a series
+expansion in terms of orthogonal polynomials, which was the primary goal
+of the project.
 
-I have received
-excellent feedback from my supervisor and the project markers regarding
-my performance, enthusiasm and initiative. Additionally, and maybe more
-importantly, this project has allowed me to make my first original
-contribution to science and reinforced my interest and commitment to
-pursue a career in scientific research. The work done on this thesis
-was expanded on a collaboration with Professor David M Heyes (my BSc
-thesis supervisor), and
-[published in The Journal of Chemical Physics](https://doi.org/10.1063/1.5006035).
+I have received excellent feedback from my supervisor and the project
+markers regarding my performance, enthusiasm and initiative.
+Additionally, and maybe more importantly, this project has allowed me
+to make my first original contribution to science and reinforced my
+interest and commitment to pursue a career in scientific research.
+The work done on this thesis was expanded on a collaboration with
+Professor David M Heyes, and the results
+[published](https://doi.org/10.1063/1.5006035) in
+[The Journal of Chemical Physics](https://aip.scitation.org/journal/jcp).
 
 
 **Official written-comments from the thesis supervisor and markers:**

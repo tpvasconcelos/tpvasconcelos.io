@@ -33,13 +33,13 @@ mathematical models for simple and complex systems was refined.
 - **Classification:** First Class Honours
 - **Period:** Sep 2013 - Jun 2017
 
-As one of the main goals of any Physics Undergraduate degree, I
-developed the intuition to identify relevant laws and principles, and
-apply appropriate mathematical tools and approximations when working on
+Over the course of my degree, I was able to developed the
+intuition to identify relevant laws and principles, and apply
+appropriate mathematical tools and approximations when working on
 advanced problems in physics.
-During these 3 academic years, I developed several scientific computing
+Throughout my Undergraduate studies, I developed several scientific computing
 projects, with a focus in data analysis, molecular dynamics and simulations.
-The loooong hours spent in the lab exposed my to advanced experimental
+The looooong hours spent in the lab exposed my to advanced experimental
 methods in collection of experimental data, and I gained experience in
 evaluating the significance of the data, drawing relevant conclusions,
 applying the appropriate mathematical methods and calculating the
@@ -69,7 +69,7 @@ in the Physics examination.
 
 ## Science & Technology High School Diploma
 
-- **Institution:** Salesianos de Manique, Portugal
+- **Institution:** Escola Salesiana de Manique, Portugal
 - **Classification:** 80% GPA
 - **Period:** Sep 2008 - Jun 2011
 
