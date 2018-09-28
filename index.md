@@ -8,7 +8,7 @@ subtitle: Welcome to my page!
 ---
 
 
-[Download my résumé](/assets/files/CV_TPVasconcelos.pdf) or browse this website to learn more [about me](/about/), [my education](/education/),
+Download [my résumé (PDF)](/assets/files/CV_TPVasconcelos.pdf) or browse this website to learn more [about me](/about/), [my education](/education/),
 [my research](/research/), [my computing experience](/computing-experience/), and [my projects](/projects/).
 
 ## Get in touch

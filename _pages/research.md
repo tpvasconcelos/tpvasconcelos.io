@@ -21,10 +21,10 @@ permalink: /research/
 
     This work is concerned with, for the first time, the derivation of
     analytic expressions in the form of series expansions for the second
-    virial coefficient of bounded Mie potentials. This generalisation of
+    virial coefficient of bounded Mie potentials. This generalization of
     the Mie potential allows for potential functions which are finite
     at the origin (_"bounded"_). We also investigate the convergence
-    properties of the series expansions, and considerations of
+    properties of the series expansions and considerations of
     parameters which give rise to thermodynamic stability.
 
 
@@ -42,7 +42,7 @@ expansion in terms of orthogonal polynomials, which was the primary goal
 of the project.
 
 I have received excellent feedback from my supervisor and the project
-markers regarding my performance, enthusiasm and initiative.
+markers regarding my performance, enthusiasm, and initiative.
 Additionally, and maybe more importantly, this project has allowed me
 to make my first original contribution to science and reinforced my
 interest and commitment to pursue a career in scientific research.
@@ -54,12 +54,18 @@ Professor David M Heyes, and the results
 
 **Official written-comments from the thesis supervisor and markers:**
 
-> “Tomas observed and brought out […] a number of very interesting results, of a calibre which would reflect well on a researcher of many more years experience.”
-
-> “The series expansion and MD modelling aspects of the project were definite steps forward in our understanding of the behaviour of this system."
-
-> “[Tomas] derived single-handedly a series expansion in terms of orthogonal polynomials, which is a new approach as far as I am aware.”
-
 > “His overall performance was in the excellent category.”
+
+> “Tomas observed and brought out […] a number of very interesting
+results, of a caliber which would reflect well on a researcher of many
+more years experience.”
+
+> “The series expansion and MD modeling aspects of the project were
+definite steps forward in our understanding of the behavior
+of this system."
+
+> “[Tomas] derived single-handedly a series expansion in terms of
+orthogonal polynomials, which is a new approach as far as I am aware.”
+
 
 ---

@@ -27,7 +27,7 @@ advanced OOP features and it’s community standards.
 
 Overview of my main skills and libraries:
 - **Complex numerical problems & Data analysis** (NumPy, SciPy, Pandas)
-- **Data visualisation & GUI** (matplotlib, Mayavi, Tkinter, Blender)
+- **Data visualization & GUI** (matplotlib, Mayavi, Tkinter, Blender)
 - **Web & API development** (Django, Django REST Framework)
 - **Web scraping** (BeautifulSoup, mechanize, requests)
 - **Machine learning** (Google’s Scikit-Learn)
@@ -43,7 +43,7 @@ I've acquired professional experience in database, API, and server-side
 [blogs](/blog/), [dashboards](/Save-a-Space/) and web application with
 HTML, CSS, and JavaScript, and various web technologies.
 
-Overview of my main skills, tools and frameworks:
+Overview of my main skills, tools, and frameworks:
 - **Web Applications & Dashboards** (AngularJS, and various plotting tools)
 - **Server-side** (Docker, nginx, Gunicorn, Django)
 - **REST API** (Django, Django REST Framework)
@@ -58,7 +58,7 @@ Overview of my main skills, tools and frameworks:
 - **Version control**: Experienced with version control workflows, and
     comfortable implementing them with `git`.
 - **Mathematica**: Used regularly to solve mathematical problems and
-    as a fast data visualisation tool.
+    as a fast data visualization tool.
 - $$\boldsymbol{\LaTeX}$$**:** Main tool for typing professional
     technical reports.
 - **Bash:** Comfortable navigating shells for various purposes. Basic

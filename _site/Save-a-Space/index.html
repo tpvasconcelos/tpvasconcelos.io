@@ -185,7 +185,7 @@ their personal preferences.
 
         <div class="md-articletitlesection">
             <h1 class="md-articletitle">Data science for parking availability prediction</h1>
-            <h2 class="md-articlesubtitle">Quick insight into how I've built the engine and API dealing with the real-time analysis of parking data and occupancy prediction for the Save-a-Space project</h2>
+            <h2 class="md-articlesubtitle">A quick insight into how I've built the engine and API dealing with the real-time analysis of parking data and occupancy prediction for the Save-a-Space project</h2>
 
             <div class="post-date-time">
                 
@@ -219,7 +219,7 @@ their personal preferences.</p>
 building the engine and API that deals with the real-time analysis of
 parking data and occupancy prediction for their Save-a-Space project.
 The API would have to allow for a simple but flexible access to
-historical data, as well availability predictions.</p>
+historical data, as well as availability predictions.</p>
 
 <h1 id="the-api">The API</h1>
 
@@ -245,16 +245,16 @@ quick to go from development into a production environment.</p>
 
 <p>Thanks to Google’s <a href="http://scikit-learn.org">scikit-learn</a> machine
 learning library, the implementation of the prediction algorithm was one
-of the most straight forward parts of this project. The goal was to
+of the most straightforward parts of this project. The goal was to
 predict the occupancy of a car-park at some point in the future. We had
 years worth of parking data, which was important for testing different
 algorithms and optimizing the ones that performed best.
 I chose the <a href="https://en.wikipedia.org/wiki/Mean_squared_error"><em>mean-squared-error</em></a>
-(MSE) to be our performance metric. What we need now is to minimise
-the MSE of our algorithm, as a MSE of zero represents a perfect estimator.</p>
+(MSE) to be our performance metric. What we need now is to minimize
+the MSE of our algorithm, as an MSE of zero represents a perfect estimator.</p>
 
-<p>The algorithm can take as input parameters like: month; week-day; hour;
-bank holidays (True/False); etc… and outputs the predicted
+<p>The algorithm can take as input parameters like the month; week-day;
+hour; bank holidays (True/False); etc… and outputs the predicted
 availability. The choice of input parameters affects the
 performance of the algorithm. To find the optimal machine learning
 <em>smoothie</em>, I ran a brute-force test with multiple algorithms for
@@ -262,7 +262,7 @@ multiple car parks with different combinations of input parameters,
 with the goal of minimizing the MSE. In the end, I found the
 <a href="http://scikit-learn.org/stable/modules/tree.html">Decision Tree Algorithm</a>
 to be the most suitable and reliable estimator. Decision trees allow
-us to easily visualise the underlying model, which can be very useful to
+us to easily visualize the underlying model, which can be very useful to
 communicate the factors that most influence the occupancy of a car park.
 This can be especially useful for parking operators. Each algorithm
 will have its own extra set of parameters that can be extremely useful for
@@ -279,7 +279,7 @@ as 0.37%!</p>
 <h2 id="working-example">Working example</h2>
 
 <p>This is a quick working example of how to get started with the tree
-classifier from scikit-learn. In this first code block I am generating
+classifier from scikit-learn. In this first code block, I am generating
 some example data that we will need to train and test our chosen algorithm.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
@@ -306,20 +306,20 @@ some example data that we will need to train and test our chosen algorithm.</p>
 <span class="n">hour</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">modf</span><span class="p">(</span><span class="n">t_range_cliped</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">24</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div></div>
 
-<p>The code above generates an hypothetical dataset for a car park that peaks
-at mid-day and has less occupancy on weekends. In this example I generated
-4 weeks of data. The image bellow shows the first 14 days of the generated
+<p>The code above generates a hypothetical dataset for a car park that peaks
+at mid-day and has less occupancy on weekends. In this example, I generated
+4 weeks of data. The image below shows the first 14 days of the generated
 dataset.</p>
 
 <p><img src="/assets/images/posts/sklearnSAS.png" alt="" title="" /></p>
 
 <figcaption>The first 14 days of generated example data.</figcaption>
 
-<p>As you’ll see bellow, getting started with the sklearn library is extremely
+<p>As you’ll see below, getting started with the sklearn library is extremely
 easy. This is a very simple example of how we could use the data generated
-above to make availability predictions in the future. In the example bellow
+above to make availability predictions in the future. In the example below
 the Decision Tree Classifier predicts that on Sundays at mid-day the
-occupancy is around 48% and on Tuesdays at 9am is around 70%. Comparing
+occupancy is around 48% and on Tuesdays at 9 am is around 70%. Comparing
 this prediction with the plot above, we see that the tree was accurate.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>

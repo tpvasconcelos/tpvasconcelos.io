@@ -14,7 +14,7 @@ permalink: /projects/
 - **[mdsea](https://github.com/TPVasconcelos/mdsea)** -
     `mdsea` is a stand-alone Python molecular dynamics library equipped
     with a flexible simulation engine and multiple analysis tools,
-    including beautiful integrated visualisation in 1, 2, and 3
+    including integrated beautiful visualization in 1, 2, and 3
     dimensions. Head over to [mdsea's repo](https://github.com/TPVasconcelos/mdsea)
     to check out some of the examples and learn more about my project.
 
@@ -30,7 +30,7 @@ permalink: /projects/
 - **[tomasvasconcelos.com](http://tomasvasconcelos.com/)** -
     I design, develop, and maintain my personal webpage (this one!).
     It's a static website powered by [Jekyll](https://jekyllrb.com)'s
-    framework, and configured with HTML, CSS and JavaScript. The site is
+    framework and configured with HTML, CSS, and JavaScript. The site is
     hosted on [GitHub pages](https://pages.github.com/) and the
     [source](https://github.com/TPVasconcelos/tpvasconcelos.io) is
     openly available.

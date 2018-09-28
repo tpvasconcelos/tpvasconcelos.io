@@ -14,7 +14,7 @@ permalink: /about/
 
 ## Five things you should know about me:
 
-1. I am passioned about all things physics, maths, and tech!
+1. I am passionate about all things physics, maths, and tech!
 2. I am currently a **Mathematics graduate student at King's College London**.
 3. In 2017 I graduated from Royal Holloway, University of London with a
 **First Class Honours degree in Physics**.

@@ -17,7 +17,7 @@ permalink: /education/
 - **Institution:** King’s College London - University of London, UK
 - **Period:** Sep 2017 - Ongoing
 
-During this 1 year mathematics graduate programme at KCL, I developed a
+During this 1-year mathematics graduate programme at KCL, I developed a
 strong and robust mathematical foundation for further studies and
 research in theoretical physics. Many of the technical skills I acquired
 here are highly transferable to other fields of applied mathematics and
@@ -33,19 +33,18 @@ mathematical models for simple and complex systems was refined.
 - **Classification:** First Class Honours
 - **Period:** Sep 2013 - Jun 2017
 
-Over the course of my degree, I was able to developed the
-intuition to identify relevant laws and principles, and apply
-appropriate mathematical tools and approximations when working on
-advanced problems in physics.
-Throughout my Undergraduate studies, I developed several scientific computing
-projects, with a focus in data analysis, molecular dynamics and simulations.
-The looooong hours spent in the lab exposed my to advanced experimental
-methods in collection of experimental data, and I gained experience in
-evaluating the significance of the data, drawing relevant conclusions,
-applying the appropriate mathematical methods and calculating the
-significant statistics (it was worth it after all!).
-I also got plenty experience in communicating scientific information and
-producing clear and accurate scientific reports.
+Over the course of my degree, I was able to develop the intuition to
+identify relevant laws and principles and apply appropriate mathematical
+tools and approximations when working on advanced problems in physics.
+Throughout my Undergraduate studies, I developed several scientific
+computing projects, with a focus on data analysis, molecular dynamics,
+and simulations. The looooong hours spent in the lab exposed me to
+advanced experimental methods in collection of experimental data, and I
+gained experience in evaluating the significance of the data, drawing
+relevant conclusions, applying the appropriate mathematical methods and
+calculating the significant statistics (it was worth it after all!). I
+also got plenty of experience in communicating scientific information
+and producing clear and accurate scientific reports.
 
 
 
@@ -56,9 +55,9 @@ producing clear and accurate scientific reports.
 - **Classification:** 93% GPA
 - **Period:** Aug 2011 - May 2012
 
-Took part in a 1 year exchange program
+Took part in a 1-year exchange program
 ([AFS - American Field Service](https://afs.org)) for my last year of
-secondary studies. Achieved top grades for mathematics, physics and
+secondary studies. Achieved top grades for mathematics, physics, and
 chemistry with scores ranging from 95% to 100%. Selected for a worldwide
 science and engineering competition
 ([WYSE](https://wyse.engineering.illinois.edu/)) where I won 1st place

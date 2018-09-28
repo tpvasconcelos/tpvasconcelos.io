@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-28T05:32:13+01:00</updated><id>http://localhost:4000/</id><title type="html">tpvasconcelos.io</title><subtitle>Physics, math, tech</subtitle><entry><title type="html">Data science for parking availability prediction</title><link href="http://localhost:4000/Save-a-Space/" rel="alternate" type="text/html" title="Data science for parking availability prediction" /><published>2016-11-04T00:00:00+00:00</published><updated>2016-11-04T00:00:00+00:00</updated><id>http://localhost:4000/Save-a-Space</id><content type="html" xml:base="http://localhost:4000/Save-a-Space/">&lt;p&gt;Accelogress Ltd is a UK based software consultancy company developing
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-28T11:58:53+01:00</updated><id>http://localhost:4000/</id><title type="html">tpvasconcelos.io</title><subtitle>Physics, math, tech</subtitle><entry><title type="html">Data science for parking availability prediction</title><link href="http://localhost:4000/Save-a-Space/" rel="alternate" type="text/html" title="Data science for parking availability prediction" /><published>2016-11-04T00:00:00+00:00</published><updated>2016-11-04T00:00:00+00:00</updated><id>http://localhost:4000/Save-a-Space</id><content type="html" xml:base="http://localhost:4000/Save-a-Space/">&lt;p&gt;Accelogress Ltd is a UK based software consultancy company developing
 mobile app solutions using data analysis, machine learning, and API
 technologies. Accelogress’ project,
 &lt;a href=&quot;https://save-a-space.com&quot;&gt;Save-a-Space&lt;/a&gt;, introduces a cloud-based
@@ -16,7 +16,7 @@ their personal preferences.&lt;/p&gt;
 building the engine and API that deals with the real-time analysis of
 parking data and occupancy prediction for their Save-a-Space project.
 The API would have to allow for a simple but flexible access to
-historical data, as well availability predictions.&lt;/p&gt;
+historical data, as well as availability predictions.&lt;/p&gt;
 
 &lt;h1 id=&quot;the-api&quot;&gt;The API&lt;/h1&gt;
 
@@ -42,16 +42,16 @@ quick to go from development into a production environment.&lt;/p&gt;
 
 &lt;p&gt;Thanks to Google’s &lt;a href=&quot;http://scikit-learn.org&quot;&gt;scikit-learn&lt;/a&gt; machine
 learning library, the implementation of the prediction algorithm was one
-of the most straight forward parts of this project. The goal was to
+of the most straightforward parts of this project. The goal was to
 predict the occupancy of a car-park at some point in the future. We had
 years worth of parking data, which was important for testing different
 algorithms and optimizing the ones that performed best.
 I chose the &lt;a href=&quot;https://en.wikipedia.org/wiki/Mean_squared_error&quot;&gt;&lt;em&gt;mean-squared-error&lt;/em&gt;&lt;/a&gt;
-(MSE) to be our performance metric. What we need now is to minimise
-the MSE of our algorithm, as a MSE of zero represents a perfect estimator.&lt;/p&gt;
+(MSE) to be our performance metric. What we need now is to minimize
+the MSE of our algorithm, as an MSE of zero represents a perfect estimator.&lt;/p&gt;
 
-&lt;p&gt;The algorithm can take as input parameters like: month; week-day; hour;
-bank holidays (True/False); etc… and outputs the predicted
+&lt;p&gt;The algorithm can take as input parameters like the month; week-day;
+hour; bank holidays (True/False); etc… and outputs the predicted
 availability. The choice of input parameters affects the
 performance of the algorithm. To find the optimal machine learning
 &lt;em&gt;smoothie&lt;/em&gt;, I ran a brute-force test with multiple algorithms for
@@ -59,7 +59,7 @@ multiple car parks with different combinations of input parameters,
 with the goal of minimizing the MSE. In the end, I found the
 &lt;a href=&quot;http://scikit-learn.org/stable/modules/tree.html&quot;&gt;Decision Tree Algorithm&lt;/a&gt;
 to be the most suitable and reliable estimator. Decision trees allow
-us to easily visualise the underlying model, which can be very useful to
+us to easily visualize the underlying model, which can be very useful to
 communicate the factors that most influence the occupancy of a car park.
 This can be especially useful for parking operators. Each algorithm
 will have its own extra set of parameters that can be extremely useful for
@@ -76,7 +76,7 @@ as 0.37%!&lt;/p&gt;
 &lt;h2 id=&quot;working-example&quot;&gt;Working example&lt;/h2&gt;
 
 &lt;p&gt;This is a quick working example of how to get started with the tree
-classifier from scikit-learn. In this first code block I am generating
+classifier from scikit-learn. In this first code block, I am generating
 some example data that we will need to train and test our chosen algorithm.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
@@ -103,20 +103,20 @@ some example data that we will need to train and test our chosen algorithm.&lt;/
 &lt;span class=&quot;n&quot;&gt;hour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t_range_cliped&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The code above generates an hypothetical dataset for a car park that peaks
-at mid-day and has less occupancy on weekends. In this example I generated
-4 weeks of data. The image bellow shows the first 14 days of the generated
+&lt;p&gt;The code above generates a hypothetical dataset for a car park that peaks
+at mid-day and has less occupancy on weekends. In this example, I generated
+4 weeks of data. The image below shows the first 14 days of the generated
 dataset.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/posts/sklearnSAS.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;figcaption&gt;The first 14 days of generated example data.&lt;/figcaption&gt;
 
-&lt;p&gt;As you’ll see bellow, getting started with the sklearn library is extremely
+&lt;p&gt;As you’ll see below, getting started with the sklearn library is extremely
 easy. This is a very simple example of how we could use the data generated
-above to make availability predictions in the future. In the example bellow
+above to make availability predictions in the future. In the example below
 the Decision Tree Classifier predicts that on Sundays at mid-day the
-occupancy is around 48% and on Tuesdays at 9am is around 70%. Comparing
+occupancy is around 48% and on Tuesdays at 9 am is around 70%. Comparing
 this prediction with the plot above, we see that the tree was accurate.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.tree&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;
