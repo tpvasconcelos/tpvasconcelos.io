@@ -4,107 +4,6 @@
     <list default="true" id="281cc894-4c88-4ee2-9c65-4e125e10342e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Code.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Code.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Images.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Images.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-List.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-List.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Markdown.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Markdown.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Maths.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Maths.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-App-is-damaged-and-cant-be-opened.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-App-is-damaged-and-cant-be-opened.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Blender-and-PyCharm.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Blender-and-PyCharm.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Disable-System-Integrity-Protection.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Disable-System-Integrity-Protection.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Enable-Three-Finger-Dragging.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Enable-Three-Finger-Dragging.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Getting-started-with-Blender.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Getting-started-with-Blender.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-How-To-Erase-macOS-Disk.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-How-To-Erase-macOS-Disk.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-New-File-Service.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-New-File-Service.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-rEFInd-Installation.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-rEFInd-Installation.md" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/App_is_damaged_and_cant_be_opened/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/Blender_and_PyCharm/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/Disable_System_Integrity_Protection/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/Enable_Three_Finger_Dragging/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/Getting_started_with_Blender/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/How_To_Erase_macOS_Disk/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/New_File_Service/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/Save-a-Space/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/files/CV_TPVasconcelos.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/fonts/cmunbi-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/fonts/cmunti-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/Lenna.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/App_is_damaged_and_cant_be_opened.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/Disk_Utility_Erase.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/SASserverpipeline.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/System_Preferences.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/System_Preferences_Mouse_Trackpad.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/System_Preferences_Mouse_Trackpad_Trackpad_Options.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/macOS-sierra-recovery-mode.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/pixel-mockup-booking-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/sashistvspred.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/saveaspacesearch.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/sklearnSAS.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/site_avatar_480.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.eslintrc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.gitattributes" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/anchor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/anchor.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/banner.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/anchor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/grunticon.loader.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.data.png.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.data.svg.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.fallback.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/png/grunticon-link.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchoring-links.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchorjs_logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchorlinks2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/gh-link.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/gh_link.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/hyperlink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/link.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/mini-logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/primer-md.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/scripts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/styles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/envelope.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/github-logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/instagram.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/linkedin-logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/mobilemenu.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/overflowing-stacked-papers-tray.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/phone.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/computing-experience/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/education/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/index_hello/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/mobilemenu/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/rEFInd_Installation/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/research/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/robots.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/tests/code/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/tests/images/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/tests/lists/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/tests/markdown/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/_site/tests/math/index.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -136,8 +35,8 @@
       <file leaf-file-name="Gemfile.lock" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="213" column="18" lean-forward="true" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
+            <state relative-caret-position="313">
+              <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -165,6 +64,8 @@
       <find>ffi</find>
       <find>back end</find>
       <find>kogiri</find>
+      <find>rubyzip</find>
+      <find>jekyll</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -314,15 +215,16 @@
       <workItem from="1538014856586" duration="1948000" />
       <workItem from="1538017642879" duration="267000" />
       <workItem from="1538090659763" duration="12482000" />
-      <workItem from="1538244281942" duration="193000" />
+      <workItem from="1538244281942" duration="464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14890000" />
+    <option name="totallyTimeSpent" value="15161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18637803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -331,7 +233,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25998142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25998142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -691,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="213" column="18" lean-forward="true" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
+        <state relative-caret-position="313">
+          <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
           <folding />
         </state>
       </provider>
