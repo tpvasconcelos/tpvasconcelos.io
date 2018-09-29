@@ -3,25 +3,108 @@
   <component name="ChangeListManager">
     <list default="true" id="281cc894-4c88-4ee2-9c65-4e125e10342e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_pages/about.md" afterPath="$PROJECT_DIR$/_pages/about.md" />
-      <change beforePath="$PROJECT_DIR$/_pages/computing-experience.md" afterPath="$PROJECT_DIR$/_pages/computing-experience.md" />
-      <change beforePath="$PROJECT_DIR$/_pages/education.md" afterPath="$PROJECT_DIR$/_pages/education.md" />
-      <change beforePath="$PROJECT_DIR$/_pages/projects.md" afterPath="$PROJECT_DIR$/_pages/projects.md" />
-      <change beforePath="$PROJECT_DIR$/_pages/research.md" afterPath="$PROJECT_DIR$/_pages/research.md" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-11-04-Save-a-Space.md" afterPath="$PROJECT_DIR$/_posts/2016-11-04-Save-a-Space.md" />
-      <change beforePath="$PROJECT_DIR$/_site/Save-a-Space/index.html" afterPath="$PROJECT_DIR$/_site/Save-a-Space/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/files/CV_TPVasconcelos.pdf" afterPath="$PROJECT_DIR$/_site/assets/files/CV_TPVasconcelos.pdf" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" afterPath="$PROJECT_DIR$/_site/blog/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/computing-experience/index.html" afterPath="$PROJECT_DIR$/_site/computing-experience/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/education/index.html" afterPath="$PROJECT_DIR$/_site/education/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" afterPath="$PROJECT_DIR$/_site/projects/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/research/index.html" afterPath="$PROJECT_DIR$/_site/research/index.html" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" afterPath="$PROJECT_DIR$/_site/sitemap.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/files/CV_TPVasconcelos.pdf" afterPath="$PROJECT_DIR$/assets/files/CV_TPVasconcelos.pdf" />
-      <change beforePath="$PROJECT_DIR$/index.md" afterPath="$PROJECT_DIR$/index.md" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Code.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Code.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Images.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Images.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-List.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-List.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Markdown.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Markdown.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-01-Test-Maths.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-01-Test-Maths.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-App-is-damaged-and-cant-be-opened.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-App-is-damaged-and-cant-be-opened.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Blender-and-PyCharm.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Blender-and-PyCharm.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Disable-System-Integrity-Protection.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Disable-System-Integrity-Protection.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Enable-Three-Finger-Dragging.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Enable-Three-Finger-Dragging.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-Getting-started-with-Blender.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-Getting-started-with-Blender.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-How-To-Erase-macOS-Disk.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-How-To-Erase-macOS-Disk.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-New-File-Service.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-New-File-Service.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/1970-01-02-rEFInd-Installation.md" afterPath="$PROJECT_DIR$/_posts_test/1970-01-02-rEFInd-Installation.md" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/App_is_damaged_and_cant_be_opened/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/Blender_and_PyCharm/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/Disable_System_Integrity_Protection/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/Enable_Three_Finger_Dragging/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/Getting_started_with_Blender/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/How_To_Erase_macOS_Disk/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/New_File_Service/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/Save-a-Space/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/files/CV_TPVasconcelos.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/fonts/cmunbi-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/fonts/cmunti-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/Lenna.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/App_is_damaged_and_cant_be_opened.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/Disk_Utility_Erase.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/SASserverpipeline.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/System_Preferences.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/System_Preferences_Mouse_Trackpad.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/System_Preferences_Mouse_Trackpad_Trackpad_Options.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/automator6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/macOS-sierra-recovery-mode.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/pixel-mockup-booking-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/sashistvspred.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/saveaspacesearch.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/posts/sklearnSAS.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/site_avatar_480.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.eslintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.npmignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/anchor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/anchor.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/banner.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/anchor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/grunticon.loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.data.png.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.data.svg.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.fallback.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/png/grunticon-link.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchoring-links.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchorjs_logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchorlinks2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/gh-link.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/gh_link.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/hyperlink.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/link.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/mini-logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/primer-md.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/scripts.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/styles.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/envelope.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/github-logo.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/instagram.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/linkedin-logo.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/mobilemenu.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/overflowing-stacked-papers-tray.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/svgs/phone.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/computing-experience/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/education/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/index_hello/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/mobilemenu/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/rEFInd_Installation/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/research/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/robots.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/tests/code/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/tests/images/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/tests/lists/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/tests/markdown/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/_site/tests/math/index.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,93 +117,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_pages/about.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="320">
-                <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="education.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_pages/education.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="375">
-                <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_pages/projects.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-11-04-Save-a-Space.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-11-04-Save-a-Space.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="161">
-                <caret line="152" column="45" lean-forward="false" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="computing-experience.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_pages/computing-experience.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="552">
-                <caret line="65" column="54" lean-forward="false" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+              <first_editor relative-caret-position="452">
+                <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
                 <folding />
               </first_editor>
               <second_editor>
                 <js_state />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="213" column="18" lean-forward="true" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,8 +163,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ffi</find>
-      <find>ffi</find>
       <find>back end</find>
+      <find>kogiri</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -158,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/2018-02-03-How-To-Erase-macOS-Disk.md" />
         <option value="$PROJECT_DIR$/_posts/2018-02-03-Disable-System-Integrity-Protection.md" />
@@ -182,6 +199,7 @@
         <option value="$PROJECT_DIR$/_pages/research.md" />
         <option value="$PROJECT_DIR$/_pages/projects.md" />
         <option value="$PROJECT_DIR$/_posts/2016-11-04-Save-a-Space.md" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -210,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,6 +249,11 @@
             <path>
               <item name="tomasvasconcelos.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="tomasvasconcelos.com" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tomasvasconcelos.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tomasvasconcelos.com" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,7 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -253,12 +276,13 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/files" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images/posts" />
       <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$/assets/files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts_test" />
       <recent name="$PROJECT_DIR$/assets/files" />
     </key>
   </component>
@@ -289,26 +313,25 @@
       <updated>1538014854799</updated>
       <workItem from="1538014856586" duration="1948000" />
       <workItem from="1538017642879" duration="267000" />
-      <workItem from="1538090659763" duration="12372000" />
+      <workItem from="1538090659763" duration="12482000" />
+      <workItem from="1538244281942" duration="193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14587000" />
+    <option name="totallyTimeSpent" value="14890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18637803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25998142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25998142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -316,6 +339,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -330,252 +354,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1436">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-How-To-Erase-macOS-Disk.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-Disable-System-Integrity-Protection.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="740">
-            <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-Enable-Three-Finger-Dragging.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-New-File-Service.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-rEFInd-Installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-Blender-and-PyCharm.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="80">
-            <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-App-is-damaged-and-cant-be-opened.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="597">
-            <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-01-Test-Code.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="19" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-App-is-damaged-and-cant-be-opened.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-Blender-and-PyCharm.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-Disable-System-Integrity-Protection.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-Enable-Three-Finger-Dragging.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-Getting-started-with-Blender.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-How-To-Erase-macOS-Disk.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="17" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-New-File-Service.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="17" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/1970-01-02-rEFInd-Installation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="17" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -605,8 +383,34 @@
     <entry file="file://$PROJECT_DIR$/_pages/education.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="375">
+          <first_editor relative-caret-position="980">
             <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/projects.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="660">
+            <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-11-04-Save-a-Space.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3460">
+            <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
@@ -618,8 +422,200 @@
     <entry file="file://$PROJECT_DIR$/_pages/computing-experience.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="552">
+          <first_editor relative-caret-position="1300">
             <caret line="65" column="54" lean-forward="false" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/research.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1260">
+            <caret line="63" column="59" lean-forward="false" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1436">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-How-To-Erase-macOS-Disk.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-Disable-System-Integrity-Protection.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-Enable-Three-Finger-Dragging.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-New-File-Service.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-rEFInd-Installation.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-Blender-and-PyCharm.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2018-02-03-App-is-damaged-and-cant-be-opened.md" />
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-01-Test-Code.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-App-is-damaged-and-cant-be-opened.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-Blender-and-PyCharm.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-Disable-System-Integrity-Protection.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-Enable-Three-Finger-Dragging.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-Getting-started-with-Blender.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-How-To-Erase-macOS-Disk.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="17" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-New-File-Service.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="17" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts_test/1970-01-02-rEFInd-Installation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="17" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="320">
+            <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/education.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="375">
+            <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
@@ -657,13 +653,47 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-11-04-Save-a-Space.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="161">
-            <caret line="152" column="45" lean-forward="false" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
+          <first_editor relative-caret-position="467">
+            <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
             <folding />
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/computing-experience.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="452">
+            <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="213" column="18" lean-forward="true" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
