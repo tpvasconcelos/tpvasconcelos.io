@@ -8,12 +8,12 @@ tag: [macOS, security]
 
 images:
 
-  - url: /assets/images/posts/macOS-sierra-recovery-mode.png
+  - url: /assets/images/test_posts/macOS-sierra-recovery-mode.png
     alt: macOS sierra recovery mode utilities window
     title: macOS sierra recovery mode utilities window
     caption:
 
-  - url: /assets/images/posts/Disk_Utility_Erase.png
+  - url: /assets/images/test_posts/Disk_Utility_Erase.png
     alt: Disk Utility Erase tool
     title: Disk Utility Erase tool
     caption:

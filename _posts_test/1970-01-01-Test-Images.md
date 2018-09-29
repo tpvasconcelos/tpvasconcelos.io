@@ -8,7 +8,7 @@ tags: [test, edge case]
 
 images:
 
-  - url: /assets/images/Lenna.png
+  - url: /assets/images/test_posts/Lenna.png
     alt: Lena Söderberg, by Dwight Hooker.
     title: Lenna
     caption:

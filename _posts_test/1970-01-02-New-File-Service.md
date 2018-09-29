@@ -8,32 +8,32 @@ tag: [macOS, automator, hack, trick, new-file, productivity]
 
 images:
 
-  - url: /assets/images/posts/automator1.png
+  - url: /assets/images/test_posts/automator1.png
     alt: Automator Step-1
     title: Automator Step-1
     caption:
 
-  - url: /assets/images/posts/automator2.png
+  - url: /assets/images/test_posts/automator2.png
     alt: Automator Step-2
     title: Automator Step-2
     caption:
 
-  - url: /assets/images/posts/automator3.png
+  - url: /assets/images/test_posts/automator3.png
     alt: Automator Step-3
     title: Automator Step-3
     caption:
 
-  - url: /assets/images/posts/automator4.png
+  - url: /assets/images/test_posts/automator4.png
     alt: Automator Step-4
     title: Automator Step-4
     caption:
 
-  - url: /assets/images/posts/automator5.png
+  - url: /assets/images/test_posts/automator5.png
     alt: Automator Step-5
     title: Automator Step-5
     caption:
 
-  - url: /assets/images/posts/automator6.png
+  - url: /assets/images/test_posts/automator6.png
     alt: Automator Step-6
     title: Automator Step-6
     caption:

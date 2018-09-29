@@ -8,17 +8,17 @@ tag: [macOS, fix, trick, hack, productivity]
 
 images:
 
-  - url: /assets/images/posts/System_Preferences.png
+  - url: /assets/images/test_posts//System_Preferences.png
     alt: System Preferences main menu
     title: System Preferences main menu
     caption:
 
-  - url: /assets/images/posts/System_Preferences_Mouse_Trackpad.png
+  - url: /assets/images/test_posts/System_Preferences_Mouse_Trackpad.png
     alt: System Preferences Mouse Trackpad menu
     title: System Preferences Mouse Trackpad menu
     caption:
 
-  - url: /assets/images/posts/System_Preferences_Mouse_Trackpad_Trackpad_Options.png
+  - url: /assets/images/test_posts/System_Preferences_Mouse_Trackpad_Trackpad_Options.png
     alt: System Preferences Mouse Trackpad Trackpad Options
     title: System Preferences Mouse Trackpad Trackpad Options
     caption:

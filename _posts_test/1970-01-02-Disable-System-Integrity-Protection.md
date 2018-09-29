@@ -8,7 +8,7 @@ tags: [macOS, SIP, System-Integrity-Protection, troubleshoot, fix]
 
 images:
 
-  - url: /assets/images/posts/macOS-sierra-recovery-mode.png
+  - url: /assets/images/test_posts/macOS-sierra-recovery-mode.png
     alt: macOS sierra recovery mode utilities window
     title: macOS sierra recovery mode utilities window
     caption:

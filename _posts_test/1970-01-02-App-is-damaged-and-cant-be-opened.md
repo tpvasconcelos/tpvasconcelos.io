@@ -8,7 +8,7 @@ tags: [macOS, app, troubleshooting, fix]
 
 images:
 
-  - url: /assets/images/posts/App_is_damaged_and_cant_be_opened.png
+  - url: /assets/images/test_posts/App_is_damaged_and_cant_be_opened.png
     alt: App is damaged and cant be opened message box
     title: No, it's not! Yes, it can! No, I shouldn't!
     caption: How to get rid of this annoying message
