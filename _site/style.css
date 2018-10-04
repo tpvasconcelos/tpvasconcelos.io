@@ -658,7 +658,7 @@ a:hover, a:active {
 #grid-sidebarbody {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 190px 1fr;
   grid-column-gap: 45px;
 }
 @media screen and (max-width: 700px) {
