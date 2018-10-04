@@ -33,8 +33,3 @@ Download [my résumé (PDF)](/assets/files/CV_TPVasconcelos.pdf) or browse this 
 - <a href="{{ site.footer-links.github }}"><i class="svg-icon github"></i></a>
 &nbsp;[GitHub]({{ site.footer-links.github }})
 {% endif %}
-
-{% if site.footer-links.stackoverflow %}
-- <a href="{{ site.footer-links.stackoverflow }}"><i class="svg-icon stackoverflow"></i></a>
-&nbsp;[Stack Overflow]({{ site.footer-links.stackoverflow }})
-{% endif %}

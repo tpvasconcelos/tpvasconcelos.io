@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281cc894-4c88-4ee2-9c65-4e125e10342e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/files/CV_TPVasconcelos.pdf" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -168,16 +169,16 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/images/test_posts" />
-      <recent name="$PROJECT_DIR$/_posts_test" />
-      <recent name="$PROJECT_DIR$/assets/files" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets/files" />
       <recent name="$PROJECT_DIR$/assets/images/posts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/test_posts" />
+      <recent name="$PROJECT_DIR$/_posts_test" />
+      <recent name="$PROJECT_DIR$/assets/files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -211,12 +212,12 @@
       <workItem from="1538244281942" duration="891000" />
       <workItem from="1538245957597" duration="941000" />
       <workItem from="1538471308329" duration="791000" />
-      <workItem from="1538654620447" duration="303000" />
+      <workItem from="1538654620447" duration="344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17623000" />
+    <option name="totallyTimeSpent" value="17664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
