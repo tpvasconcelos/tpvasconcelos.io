@@ -15,7 +15,7 @@ permalink: /education/
 ## Mathematics GradDip
 
 - **Institution:** King’s College London - University of London, UK
-- **Period:** Sep 2017 - Ongoing
+- **Period:** Sep 2017 - Aug 2018
 
 During this 1-year mathematics graduate programme at KCL, I developed a
 strong and robust mathematical foundation for further studies and
