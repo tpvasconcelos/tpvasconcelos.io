@@ -1,9 +1,9 @@
 ---
 layout: page
 
-title: Hello, I'm Tomás.
+title: Welcome to my page!
 
-subtitle: Welcome to my page!
+subtitle: “The good life is inspired by love and guided by knowledge"
 
 ---
 
