@@ -3,7 +3,7 @@ layout: page
 
 title: Welcome to my page!
 
-subtitle: “The good life is inspired by love and guided by knowledge"
+subtitle: “The good life is inspired by love and guided by knowledge" </br>— Bertrand Russell
 
 ---
 

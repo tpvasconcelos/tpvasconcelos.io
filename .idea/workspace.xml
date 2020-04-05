@@ -3,9 +3,55 @@
   <component name="ChangeListManager">
     <list default="true" id="281cc894-4c88-4ee2-9c65-4e125e10342e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Save-a-Space/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Save-a-Space/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/files/CV_TPVasconcelos.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/files/CV_TPVasconcelos.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/anchor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/anchorjs-extras.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/fonts/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/grunticon.loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.data.png.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.data.svg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/icons.fallback.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/grunticon/png/grunticon-link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchoring-links.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchorjs_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/anchorlinks2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/gh-link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/gh_link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/hyperlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/mini-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/img/primer-md.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/javascript/anchor-js/docs/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/computing-experience/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/computing-experience/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/education/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/education/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index_hello/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index_hello/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/mobilemenu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/mobilemenu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/research/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/research/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,16 +72,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
-  </component>
   <component name="ProjectId" id="1VU6cauL9NAFtbNGpNLpzaAF7rV" />
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -49,18 +93,6 @@
       <recent name="$PROJECT_DIR$/assets/files" />
       <recent name="$PROJECT_DIR$/assets/images/posts" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -93,7 +125,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

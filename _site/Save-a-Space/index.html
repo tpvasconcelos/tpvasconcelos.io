@@ -118,7 +118,7 @@ their personal preferences.
 
 
     
-    <a href="tel:+44(0)7874198319">
+    <a href="tel:+31 6 86 11 22 17">
         <i class="svg-icon phone"></i>
     </a>
     
@@ -284,26 +284,26 @@ some example data that we will need to train and test our chosen algorithm.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
-<span class="n">SAMPLE_SIZE</span> <span class="o">=</span> <span class="mi">896</span>  <span class="c"># 28 * 6</span>
+<span class="n">SAMPLE_SIZE</span> <span class="o">=</span> <span class="mi">896</span>  <span class="c1"># 28 * 6
+</span>
+<span class="c1"># 4 weeks range: 28 days times 2*pi radians
+</span><span class="n">t_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">56</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">),</span> <span class="n">SAMPLE_SIZE</span><span class="p">)</span>
 
-<span class="c"># 4 weeks range: 28 days times 2*pi radians</span>
-<span class="n">t_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">56</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">),</span> <span class="n">SAMPLE_SIZE</span><span class="p">)</span>
+<span class="c1"># Generate a sin wave for the occupancy percentage
+</span><span class="n">occupancy</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t_range</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="c1"># Reduce occupancy on weekends
+</span><span class="n">occupancy</span> <span class="o">*=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">SAMPLE_SIZE</span> <span class="o">/</span> <span class="mi">28</span><span class="p">)</span>
+<span class="c1"># Add some random noise
+</span><span class="n">occupancy</span> <span class="o">*=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">SAMPLE_SIZE</span><span class="p">)</span>
+<span class="c1"># Round the occupancy percentage to the nearest integer
+</span><span class="n">occupancy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">occupancy</span><span class="p">)</span>
 
-<span class="c"># Generate a sin wave for the occupancy percentage</span>
-<span class="n">occupancy</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t_range</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span>
-<span class="c"># Reduce occupancy on weekends</span>
-<span class="n">occupancy</span> <span class="o">*=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">SAMPLE_SIZE</span> <span class="o">/</span> <span class="mi">28</span><span class="p">)</span>
-<span class="c"># Add some random noise</span>
-<span class="n">occupancy</span> <span class="o">*=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">SAMPLE_SIZE</span><span class="p">)</span>
-<span class="c"># Round the occupancy percentage to the nearest integer</span>
-<span class="n">occupancy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">occupancy</span><span class="p">)</span>
-
-<span class="c"># Convert from radians to 'days' and</span>
-<span class="c"># clip days of week between 0 and 6</span>
-<span class="n">t_range_cliped</span> <span class="o">=</span> <span class="p">(</span><span class="n">t_range</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">%</span> <span class="mi">7</span>
+<span class="c1"># Convert from radians to 'days' and
+# clip days of week between 0 and 6
+</span><span class="n">t_range_cliped</span> <span class="o">=</span> <span class="p">(</span><span class="n">t_range</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="o">%</span> <span class="mi">7</span>
 <span class="n">weekdays</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">t_range_cliped</span><span class="p">)</span>
-<span class="c"># transform fractional part of the day to an hour</span>
-<span class="n">hour</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">modf</span><span class="p">(</span><span class="n">t_range_cliped</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">24</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># transform fractional part of the day to an hour
+</span><span class="n">hour</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rint</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">modf</span><span class="p">(</span><span class="n">t_range_cliped</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">24</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div></div>
 
 <p>The code above generates a hypothetical dataset for a car park that peaks
@@ -324,19 +324,19 @@ this prediction with the plot above, we see that the tree was accurate.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
 
-<span class="c"># Create and instance of DecisionTreeClassifier</span>
-<span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<span class="c1"># Create and instance of DecisionTreeClassifier
+</span><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
 
-<span class="c"># Input parameters (features): day-of-week, hour-of-day</span>
-<span class="n">input_features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">weekdays</span><span class="p">,</span> <span class="n">hour</span><span class="p">],</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># Input parameters (features): day-of-week, hour-of-day
+</span><span class="n">input_features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">weekdays</span><span class="p">,</span> <span class="n">hour</span><span class="p">],</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c"># Train the classifier</span>
-<span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">input_features</span><span class="p">,</span> <span class="n">occupancy</span><span class="p">)</span>
+<span class="c1"># Train the classifier
+</span><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">input_features</span><span class="p">,</span> <span class="n">occupancy</span><span class="p">)</span>
 
-<span class="c"># Make a prediction for:</span>
-<span class="c">#   - Sunday at 12pm: [6, 12]</span>
-<span class="c">#   - Tuesday at 9am: [1, 9]</span>
-<span class="n">prediction</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])</span>
+<span class="c1"># Make a prediction for:
+#   - Sunday at 12pm: [6, 12]
+#   - Tuesday at 9am: [1, 9]
+</span><span class="n">prediction</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">prediction</span><span class="p">)</span>
 </code></pre></div></div>
 </div>
@@ -401,7 +401,7 @@ this prediction with the plot above, we see that the tree was accurate.</p>
 
 
     
-    <a href="tel:+44(0)7874198319">
+    <a href="tel:+31 6 86 11 22 17">
         <i class="svg-icon phone"></i>
     </a>
     
