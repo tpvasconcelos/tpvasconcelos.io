@@ -9,7 +9,7 @@ permalink: /projects/
 
 ---
 
-
+**⚠️ Probably not up-tp-date...**
 
 - **[mdsea](https://github.com/TPVasconcelos/mdsea)** -
     `mdsea` is a stand-alone Python molecular dynamics library equipped
@@ -17,15 +17,6 @@ permalink: /projects/
     including integrated beautiful visualization in 1, 2, and 3
     dimensions. Head over to [mdsea's repo](https://github.com/TPVasconcelos/mdsea)
     to check out some of the examples and learn more about my project.
-
-
-- **[Save-a-Space](/Save-a-Space/)** -
-    I built the engine and API that deals with the real-time analysis
-    of parking data and occupancy prediction for the
-    [Save-a-Space](https://save-a-space.com/) project. Combining modern
-    machine learning and web development tools, I was able to deliver
-    reliable predictions up to a 99% confidence level.
-    [Read more...](/Save-a-Space/)
 
 - **[tomasvasconcelos.com](http://tomasvasconcelos.com/)** -
     I design, develop, and maintain my personal webpage (this one!).
