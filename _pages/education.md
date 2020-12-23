@@ -3,78 +3,63 @@ layout: page
 
 title: Education
 
-subtitle: Dedicated student, eager to learn and excel in my academic studies
+subtitle:
 
 permalink: /education/
 
 ---
 
+## 📚 TL;DR
 
-
-
-## Mathematics GradDip
-
-- **Institution:** King’s College London - University of London, UK
-- **Period:** Sep 2017 - Aug 2018
-
-During this 1-year mathematics graduate programme at KCL, I developed a
-strong and robust mathematical foundation for further studies and
-research in theoretical physics. Many of the technical skills I acquired
-here are highly transferable to other fields of applied mathematics and
-statistics. My mathematical intuition to interpret and build
-mathematical models for simple and complex systems was refined.
-
-
-
-
-## Physics BSc
-
-- **Institution:** Royal Holloway, University of London, UK
-- **Classification:** First Class Honours
-- **Period:** Sep 2013 - Jun 2017
-
-Over the course of my degree, I was able to develop the intuition to
-identify relevant laws and principles and apply appropriate mathematical
-tools and approximations when working on advanced problems in physics.
-Throughout my Undergraduate studies, I developed several scientific
-computing projects, with a focus on data analysis, molecular dynamics,
-and simulations. The looooong hours spent in the lab exposed me to
-advanced experimental methods in collection of experimental data, and I
-gained experience in evaluating the significance of the data, drawing
-relevant conclusions, applying the appropriate mathematical methods and
-calculating the significant statistics (it was worth it after all!). I
-also got plenty of experience in communicating scientific information
-and producing clear and accurate scientific reports.
-
-
-
-
-## Intercultural Exchange Year
-
-- **Institution:** River Ridge High School, USA
-- **Classification:** 93% GPA
-- **Period:** Aug 2011 - May 2012
-
-Took part in a 1-year exchange program
-([AFS - American Field Service](https://afs.org)) for my last year of
-secondary studies. Achieved top grades for mathematics, physics, and
-chemistry with scores ranging from 95% to 100%. Selected for a worldwide
-science and engineering competition
-([WYSE](https://wyse.engineering.illinois.edu/)) where I won 1st place
-in the Physics examination.
-
-
-
-
-## Science & Technology High School Diploma
-
-- **Institution:** Escola Salesiana de Manique, Portugal
-- **Classification:** 80% GPA
-- **Period:** Sep 2008 - Jun 2011
-
-Took the "Science & Technology" path for my secondary education,
-focussing on higher level science and mathematics. Scored 85% on the
-Physics & Chemistry national exam, placing me in the country’s top 3%.
-
+- In 2017, I graduated from Royal Holloway University of London with a First Class Honours degree in Physics,
+  followed by the Mathematics graduate degree at King’s College London.
 
 ---
+
+# Education
+
+## Graduate - Mathematics
+
+🏛️ King’s College London, United Kingdom
+
+🗓️ Sep 2017 - Aug 2018
+
+- Developed a robust mathematical foundation for further studies and research in theoretical physics.
+- Refined my mathematical intuition to interpret and build models for simple and complex systems.
+- The skills acquired are highly transferable to other fields of applied mathematics and statistics.
+
+## Bachelor of Science - Physics
+
+🏛️ Royal Holloway, University of London, United Kingdom
+
+🗓️ Sep 2013 - Jun 2017
+
+🎯 First Class Honours
+
+- Developed the intuition to identify relevant laws and principles and apply appropriate mathematical tools
+  and approximations when working on complex problems.
+- Exposed to advanced experimental methods in collection of experimental data, evaluating its significance,
+  drawing relevant conclusions, and calculating the significant statistics.
+- Developed several scientific computing projects with a focus on data analysis and fluid dynamics.
+- Experience in communicating experimental results and producing clear and accurate reports.
+
+## High School - Exchange Year
+
+🏛️ River Ridge High School, USA
+
+🗓️ Aug 2011 - May 2012
+
+🎯 93% GPA
+
+- Took part in a one-year [exchange program](https://afs.org/) on my last year of high-school.
+- Top grades for mathematics, physics, and chemistry with scores ranging between 95% and 100%.
+
+## High School - Science Track
+
+🏛️ Escola Salesiana de Manique, Portugal
+
+🗓️ Sep 2008 - Jun 2011
+
+🎯 80% GPA
+
+- Ranked in the 97th percentile for the Physics & Chemistry national exam.
