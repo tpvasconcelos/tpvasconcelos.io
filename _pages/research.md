@@ -13,7 +13,7 @@ permalink: /research/
 
 
 
-# Publications
+## Publications
 
 - _“The second virial coefficient of bounded Mie potentials”_ -
     The Journal of Chemical Physics 147, 214504 (2017)
@@ -30,7 +30,7 @@ permalink: /research/
 
 
 
-# BSc Physics Thesis
+## BSc Physics Thesis
 
 **Classification:** First Class - 82%
 
