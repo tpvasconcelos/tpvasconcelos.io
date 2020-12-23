@@ -9,16 +9,14 @@ permalink: /education/
 
 ---
 
-## 📚 TL;DR
 
 - In 2017, I graduated from Royal Holloway University of London with a First Class Honours degree in Physics,
   followed by the Mathematics graduate degree at King’s College London.
 
 ---
 
-# Education
 
-## Graduate - Mathematics
+# Graduate - Mathematics
 
 🏛️ King’s College London, United Kingdom
 
@@ -28,7 +26,7 @@ permalink: /education/
 - Refined my mathematical intuition to interpret and build models for simple and complex systems.
 - The skills acquired are highly transferable to other fields of applied mathematics and statistics.
 
-## Bachelor of Science - Physics
+# Bachelor of Science - Physics
 
 🏛️ Royal Holloway, University of London, United Kingdom
 
@@ -43,7 +41,7 @@ permalink: /education/
 - Developed several scientific computing projects with a focus on data analysis and fluid dynamics.
 - Experience in communicating experimental results and producing clear and accurate reports.
 
-## High School - Exchange Year
+# High School - Exchange Year
 
 🏛️ River Ridge High School, USA
 
@@ -54,7 +52,7 @@ permalink: /education/
 - Took part in a one-year [exchange program](https://afs.org/) on my last year of high-school.
 - Top grades for mathematics, physics, and chemistry with scores ranging between 95% and 100%.
 
-## High School - Science Track
+# High School - Science Track
 
 🏛️ Escola Salesiana de Manique, Portugal
 

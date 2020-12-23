@@ -3,13 +3,12 @@ layout: page
 
 title: Professional Experience
 
-subtitle: I help teams and companies deliver value-driven solutions to data science problems, **fast!**
+subtitle:
 
 permalink: /professional-experience/
 
 ---
 
-## ⚡ TL;DR
 
 - I help teams and companies deliver value-driven solutions to data science problems, **fast!**
 - I have hands-on experience in **solving real business-problems** using techniques from descriptive
@@ -18,9 +17,8 @@ permalink: /professional-experience/
 
 ---
 
-# Professional Experience
 
-## Tiqets
+# Tiqets
 
 👨🏽‍🏭 Machine Learning Engineer
 
@@ -33,7 +31,7 @@ closely with data and business analysts, data engineers, as well as product owne
 apply software development, data analytics, and machine learning to scale and operationalise statistical
 models and make the whole organisation more data-driven.
 
-### 📈 Time Series Forecasting
+## 📈 Time Series Forecasting
 
 Operationalised sales forecasting by building a general and automated pipeline for pre-processing, model
 selection, evaluation, and periodic updating of forecasted values. Any of these jobs are distributed
@@ -47,7 +45,7 @@ optimised [Prophet](https://facebook.github.io/prophet/) model performed best.
 **Technologies:** Kubernetes, ECR, S3, Redshift, SQLAlchemy, Alembic, DataDog, Celery, Redis, Dynaconf,
 FBProphet, mypy, pytests, scikit-learn, sphinx, statsmodels, pandas, numpy
 
-### 🎥 Recommender System
+## 🎥 Recommender System
 
 Improved recommendations across our platform by taking user-preference and item-similarity into account. Also
 enriched popularity-based heuristics for [cold-start](https://recsyswiki.com/wiki/Cold-start_problem)
@@ -58,7 +56,7 @@ recommender models, we also implemented
 a [time-dependent offline evaluation](http://adrem.uantwerpen.be/bibrem/pubs/OfflineEvalJeunen2018.pdf)
 pipeline for recommender systems, curated for the e-commerce setting.
 
-### 🏆 Learning to Rank with Reinforcement Learning
+## 🏆 Learning to Rank with Reinforcement Learning
 
 To optimise any ranked list on our platform, I initially framed this task as a Supervised Machine-Learned
 Ranking problem, which involved comparing the predicted ranking to some ideal ranking using a metric such
@@ -71,7 +69,7 @@ improve the rankings. As new data is collected through our event-pipeline, we
 use [Airflow](https://airflow.apache.org/) to frequently update the rankings (e.g. by re-sampling from the
 updated posterior distribution).
 
-### 👨🏽‍💼 Leadership / Management / Soft Skills
+## 👨🏽‍💼 Leadership / Management / Soft Skills
 
 - Provided guidance and supervision to two University students working on their Masters Thesis. Both students
   finished with outstanding grades (8/10 and 8.5/10).
@@ -85,7 +83,7 @@ updated posterior distribution).
 - The Data Crew at Tiqets grew from 3 to 15 people since I joined. I helped with the recruiting, assessing,
   and interviewing of candidates as well as organising and attending career fairs.
 
-## Accelogress
+# Accelogress
 
 👨🏽‍🏭 Machine Learning Engineer
 
