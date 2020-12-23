@@ -4,7 +4,7 @@ layout: page
 
 title: Research
 
-subtitle: Amateur scientist trying to make relevant contributions to my field
+subtitle:
 
 permalink: /research/
 
