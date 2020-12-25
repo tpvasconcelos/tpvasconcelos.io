@@ -1,16 +1,21 @@
+# Project information
 site_name: Tomas Pereira de Vasconcelos
-site_url: http://tomasvasconcelos.com
-repo_url: https://github.com/tpvasconcelos/tpvasconcelos.io
-repo_name: tpvasconcelos.io
 site_description: An (aspiring) grandmaster of the Data Science Lifecycle.
 site_author: Tomas Pereira de Vasconcelos <tomasvasconcelos1@gmail.com>
-google_analytics:
-  - 'UA-111484808-1'
-  - auto
+site_url: http://tomasvasconcelos.com
 
-extra:
-  email: tomasvasconcelos1@gmail.com
 
+# Repository
+repo_name: tpvasconcelos/tpvasconcelos.io
+repo_url: https://github.com/tpvasconcelos/tpvasconcelos.io
+edit_uri: edit/master/mkdocs/docs/
+
+
+# Copyright
+copyright: 'Copyright &copy; 2020 - 2021 Tomas Pereira de Vasconcelos'
+
+
+# Navigation
 nav:
     - Home: index.md
     - About:
@@ -20,6 +25,10 @@ nav:
       - about/research.md
     - contacts.md
 
+
+# Configuration
+strict: true
+site_dir: '../docs/'
 theme:
   name: material
   custom_dir: overrides
@@ -37,6 +46,8 @@ theme:
   favicon: assets/images/logo.png
   logo: assets/images/logo.png
 
+
+# Extensions
 markdown_extensions:
   - smarty
   - admonition
@@ -47,4 +58,13 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-strict: true
+
+# Google Analytics
+google_analytics:
+  - 'UA-111484808-1'
+  - auto
+
+
+# Parameters
+extra:
+  email: tomasvasconcelos1@gmail.com
