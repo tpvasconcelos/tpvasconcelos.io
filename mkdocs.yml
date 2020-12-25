@@ -36,8 +36,6 @@ theme:
     code: Roboto Mono
   favicon: assets/images/favicon.png
   logo: assets/images/logo.png
-  icon:
-    logo: logo
 
 markdown_extensions:
   - smarty
