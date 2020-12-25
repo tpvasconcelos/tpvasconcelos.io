@@ -5,7 +5,7 @@ Learn more [about me](/about/), my [professional experience](/about/professional
 [education](/about/education/), and [research](/about/research/).
 
 
-[Download my CV (PDF)](/assets/files/CV_TPVasconcelos.pdf){: .md-button }
+[Download my CV (PDF)](assets/files/CV_TPVasconcelos.pdf){: .md-button }
 
 
 ## Get in touch!
