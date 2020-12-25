@@ -19,4 +19,4 @@ If you would like to get in touch for a phone call, I suggest dropping me an ema
 - E-mail: [tomasvasconcelos1@gmail.com](mailto:tomasvasconcelos1@gmail.com)
 - LinkedIn: [linkedin.com/in/tpvasconcelos](https://www.linkedin.com/in/tpvasconcelos/)
 - GitHub: [github.com/tpvasconcelos](https://github.com/tpvasconcelos)
-- StackOverflow: [stackoverflow.com/users/6028742/tpvasconcelos](https://stackoverflow.com/users/6028742/tpvasconcelos)
+- Stack Overflow: [stackoverflow.com/users/6028742/tpvasconcelos](https://stackoverflow.com/users/6028742/tpvasconcelos)

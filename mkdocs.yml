@@ -14,9 +14,10 @@ extra:
 nav:
     - Home: index.md
     - About:
-      - professional-experience.md
-      - education.md
-      - research.md
+      - Who am I?: about/index.md
+      - about/professional-experience.md
+      - about/education.md
+      - about/research.md
     - contacts.md
 
 theme:
@@ -34,14 +35,14 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/images/favicon.png
+  logo: assets/images/logo.png
   icon:
-    logo: assets/images/logo.png
+    logo: logo
 
 markdown_extensions:
   - smarty
   - admonition
   - attr_list
-  - wikilinks
   - toc:
       permalink: true
   - pymdownx.emoji:
