@@ -34,7 +34,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  logo: img/logo.png
+  favicon: assets/images/logo.png
+  logo: assets/images/logo.png
 
 markdown_extensions:
   - smarty
