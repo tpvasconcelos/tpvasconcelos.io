@@ -1,8 +1,0 @@
-{% if include.crop %}<img class="img-include crop-image" src="{{ site.baseurl }}{{ include.image.url }}"
-                          alt="{{ include.image.alt }}" title="{{ include.image.title }}">
-{% else %}<img src="{{ site.baseurl }}{{ include.image.url }}" alt="{{ include.image.alt }}"
-               title="{{ include.image.title }}">
-{% endif %}
-{% if include.image.caption %}
-<figcaption>{{ include.image.caption }}</figcaption>
-{% endif %}
