@@ -1,4 +1,7 @@
-# Professional Experience
+---
+title: Professional Experience
+description: About my professional experience.
+---
 
 !!! tip "TL;DR"
     - I help teams and companies deliver value-driven solutions to data science problems, **fast!**

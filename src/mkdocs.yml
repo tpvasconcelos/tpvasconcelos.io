@@ -49,9 +49,10 @@ theme:
 
 # Extensions
 markdown_extensions:
-  - smarty
   - admonition
   - attr_list
+  - meta
+  - smarty
   - toc:
       permalink: true
   - pymdownx.emoji:

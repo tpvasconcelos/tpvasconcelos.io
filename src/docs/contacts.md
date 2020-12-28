@@ -1,4 +1,7 @@
-# Contacts
+---
+title: Contacts
+description: My contact details.
+---
 
 If you would like to get in touch for a phone call, I suggest dropping me an email first.
 

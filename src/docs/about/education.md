@@ -1,4 +1,7 @@
-# Education
+---
+title: Education
+description: About my education/academic background.
+---
 
 
 !!! tip "TL;DR"
