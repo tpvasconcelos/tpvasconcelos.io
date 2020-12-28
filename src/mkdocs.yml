@@ -35,6 +35,7 @@ theme:
   language: en
   features:
     - navigation.sections
+    - navigation.instant
     - navigation.tabs
   palette:
     scheme: default
@@ -68,4 +69,16 @@ google_analytics:
 
 # Parameters
 extra:
-  email: tomasvasconcelos1@gmail.com
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:tomasvasconcelos1@gmail.com
+      name: "E-mail: tomasvasconcelos1@gmail.com"
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tpvasconcelos/
+      name: "LinkedIn: tpvasconcelos"
+    - icon: fontawesome/brands/github
+      link: https://github.com/tpvasconcelos
+      name: "GitHub: tpvasconcelos"
+    - icon: fontawesome/brands/stack-overflow
+      link: https://stackoverflow.com/users/6028742/tpvasconcelos
+      name: "Stack Overflow: tpvasconcelos"

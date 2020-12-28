@@ -12,13 +12,7 @@ If you would like to get in touch for a phone call, I suggest dropping me an ema
 
 ## Contact details
 
-[comment]: <> ([:fontawesome-solid-paper-plane:]&#40;mailto:tomasvasconcelos1@gmail.com&#41;)
-
-[comment]: <> ([:fontawesome-brands-linkedin:]&#40;https://www.linkedin.com/in/tpvasconcelos/&#41;)
-
-[comment]: <> ([:fontawesome-brands-github:]&#40;https://github.com/tpvasconcelos&#41;)
-
-[comment]: <> ([:fontawesome-brands-stack-overflow:]&#40;https://stackoverflow.com/users/6028742/tpvasconcelos&#41;)
+[comment]: <> ([:fontawesome-brands-stack-overflow:]&#40;&#41;)
   
 - E-mail: [tomasvasconcelos1@gmail.com](mailto:tomasvasconcelos1@gmail.com)
 - LinkedIn: [linkedin.com/in/tpvasconcelos](https://www.linkedin.com/in/tpvasconcelos/)
