@@ -1,5 +1,5 @@
 ---
-title: Contacts
+title: Get in touch!
 description: My contact details.
 ---
 

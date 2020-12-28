@@ -17,13 +17,13 @@ copyright: 'Copyright &copy; 2020 - 2021 Tomas Pereira de Vasconcelos'
 
 # Navigation
 nav:
-    - Home: index.md
+    - Welcome to my page!: index.md
     - About:
       - Who am I?: about/index.md
       - about/professional-experience.md
       - about/education.md
       - about/research.md
-    - contacts.md
+    - Contacts: contacts.md
 
 
 # Configuration
