@@ -17,9 +17,9 @@ copyright: 'Copyright &copy; 2020 - 2021 Tomas Pereira de Vasconcelos'
 
 # Navigation
 nav:
-    - Welcome to my page!: index.md
+    - Home: index.md
     - About:
-      - Who am I?: about/index.md
+      - about/index.md
       - about/professional-experience.md
       - about/education.md
       - about/research.md

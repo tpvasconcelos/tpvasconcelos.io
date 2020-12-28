@@ -1,7 +1,9 @@
 ---
-title: Welcome to my page!
 description: The homepage of my personal website.
 ---
+
+# Welcome to my page!
+
 
 ## Who am I?
 Learn more [about me](/about/), my [professional experience](/about/professional-experience/),

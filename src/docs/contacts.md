@@ -1,7 +1,8 @@
 ---
-title: Get in touch!
 description: My contact details.
 ---
+
+# Get in touch!
 
 If you would like to get in touch for a phone call, I suggest dropping me an email first.
 
