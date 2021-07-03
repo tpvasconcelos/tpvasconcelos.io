@@ -32,6 +32,7 @@ site_dir: '../docs/'
 theme:
   name: material
   custom_dir: overrides
+  locale: en
   language: en
   features:
     - navigation.sections
@@ -46,6 +47,9 @@ theme:
     code: Roboto Mono
   favicon: assets/images/logo.png
   logo: assets/images/logo.png
+  analytics:
+    # Google Analytics
+    gtag: G-278027779
 
 
 # Extensions
@@ -59,12 +63,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-
-# Google Analytics
-google_analytics:
-  - 'UA-111484808-1'
-  - auto
 
 
 # Parameters
