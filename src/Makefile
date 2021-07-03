@@ -39,6 +39,6 @@ build: ## build mkdocs
 
 .PHONY: publish
 publish: build ## build and publish mkdocs
-	git add .
+	git add -A
 	git commit -m "mkdocs build"
 	git push
