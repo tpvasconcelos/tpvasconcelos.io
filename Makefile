@@ -41,12 +41,12 @@ init: clean-all ## initialise development environment
 
 .PHONY: build
 build: ## build mkdocs
-	$(MAKE) -C src/ build
+	$(MAKE) --directory=src build
 
 
 .PHONY: publish
 publish: ## build and publish mkdocs
-	$(MAKE) -C src/ publish
+	$(MAKE) --directory=src publish
 
 
 # ==============================================================
