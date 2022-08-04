@@ -1,6 +1,8 @@
 ---
 title: Professional Experience
 description: About my professional experience.
+hide:
+  - footer
 ---
 
 !!! tip "TL;DR"

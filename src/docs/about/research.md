@@ -1,6 +1,8 @@
 ---
 title: Research
-description: About my research experience. 
+description: About my research experience.
+hide:
+  - footer
 ---
 
 

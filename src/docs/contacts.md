@@ -1,5 +1,7 @@
 ---
 description: My contact details.
+hide:
+  - footer
 ---
 
 # Get in touch!

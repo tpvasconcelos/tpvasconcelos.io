@@ -2,7 +2,7 @@
 site_name: Tomas Pereira de Vasconcelos
 site_description: An (aspiring) grandmaster of the Data Science Lifecycle.
 site_author: Tomas Pereira de Vasconcelos <tomasvasconcelos1@gmail.com>
-site_url: http://tomasvasconcelos.com
+site_url: https://tomasvasconcelos.com
 
 
 # Repository
@@ -12,7 +12,7 @@ edit_uri: ''
 
 
 # Copyright
-copyright: 'Copyright &copy; 2020 - 2021 Tomas Pereira de Vasconcelos'
+copyright: 'Copyright &copy; 2020 - 2022 Tomas Pereira de Vasconcelos'
 
 
 # Navigation
@@ -67,6 +67,7 @@ markdown_extensions:
 
 # Parameters
 extra:
+  generator: false
   social:
     - icon: fontawesome/solid/paper-plane
       link: mailto:tomasvasconcelos1@gmail.com

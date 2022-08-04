@@ -1,6 +1,8 @@
 ---
 title: Education
 description: About my education/academic background.
+hide:
+  - footer
 ---
 
 

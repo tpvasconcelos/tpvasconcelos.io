@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://tomasvasconcelos.com/</loc>
-         <lastmod>2022-04-09</lastmod>
+         <loc>https://tomasvasconcelos.com/</loc>
+         <lastmod>2022-08-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tomasvasconcelos.com/contacts/</loc>
-         <lastmod>2022-04-09</lastmod>
+         <loc>https://tomasvasconcelos.com/contacts/</loc>
+         <lastmod>2022-08-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tomasvasconcelos.com/about/</loc>
-         <lastmod>2022-04-09</lastmod>
+         <loc>https://tomasvasconcelos.com/about/</loc>
+         <lastmod>2022-08-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tomasvasconcelos.com/about/education/</loc>
-         <lastmod>2022-04-09</lastmod>
+         <loc>https://tomasvasconcelos.com/about/education/</loc>
+         <lastmod>2022-08-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tomasvasconcelos.com/about/professional-experience/</loc>
-         <lastmod>2022-04-09</lastmod>
+         <loc>https://tomasvasconcelos.com/about/professional-experience/</loc>
+         <lastmod>2022-08-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://tomasvasconcelos.com/about/research/</loc>
-         <lastmod>2022-04-09</lastmod>
+         <loc>https://tomasvasconcelos.com/about/research/</loc>
+         <lastmod>2022-08-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

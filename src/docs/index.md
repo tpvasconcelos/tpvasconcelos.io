@@ -1,5 +1,7 @@
 ---
 description: The homepage of my personal website.
+hide:
+  - footer
 ---
 
 # Welcome to my page!

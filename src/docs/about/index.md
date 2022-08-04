@@ -1,6 +1,8 @@
 ---
 title: Who am I?
 description: About me.
+hide:
+  - footer
 ---
 
 ## 🚀 The Ambitious
