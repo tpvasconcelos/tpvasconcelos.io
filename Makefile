@@ -33,10 +33,10 @@ PYTHON ?= .venv/bin/python
 
 .PHONY: init
 init: clean-all ## initialise development environment
-	python3.7 -m pip install --upgrade pip virtualenv
-	python3.7 -m virtualenv -p python3.7 .venv
-	$(PYTHON) -m pip install --upgrade pip
-	$(PYTHON) -m pip install mkdocs==1.2.1 mkdocs-material==7.1.9
+	python3.9 -m pip install --upgrade pip
+	python3.9 -m venv .venv
+	$(PYTHON) -m pip install --upgrade pip setuptools wheel
+	$(PYTHON) -m pip install mkdocs==1.3.1 mkdocs-material==8.3.9
 
 
 .PHONY: build
