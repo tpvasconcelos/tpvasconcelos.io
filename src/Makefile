@@ -34,7 +34,7 @@ PYTHON ?= ../.venv/bin/python
 .PHONY: build
 build: ## build mkdocs
 	$(PYTHON) -m mkdocs build
-	printf "tomasvasconcelos.com" > ../docs/CNAME
+	printf "tpvasconcelos.com" > ../docs/CNAME
 
 
 .PHONY: publish

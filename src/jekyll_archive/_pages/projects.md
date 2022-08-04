@@ -18,7 +18,7 @@ permalink: /projects/
     dimensions. Head over to [mdsea's repo](https://github.com/TPVasconcelos/mdsea)
     to check out some of the examples and learn more about my project.
 
-- **[tomasvasconcelos.com](http://tomasvasconcelos.com/)** -
+- **[tpvasconcelos.com](http://tpvasconcelos.com/)** -
     I design, develop, and maintain my personal webpage (this one!).
     It's a static website powered by [Jekyll](https://jekyllrb.com)'s
     framework and configured with HTML, CSS, and JavaScript. The site is
