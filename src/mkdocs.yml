@@ -1,7 +1,7 @@
 # Project information
 site_name: Tomas Pereira de Vasconcelos
 site_description: An (aspiring) grandmaster of the Data Science Lifecycle.
-site_author: Tomas Pereira de Vasconcelos <tomasvasconcelos1@gmail.com>
+site_author: Tomas Pereira de Vasconcelos <hello@tpvasconcelos.com>
 site_url: https://tomasvasconcelos.com
 
 
@@ -70,8 +70,8 @@ extra:
   generator: false
   social:
     - icon: fontawesome/solid/paper-plane
-      link: mailto:tomasvasconcelos1@gmail.com
-      name: "E-mail: tomasvasconcelos1@gmail.com"
+      link: mailto:hello@tpvasconcelos.com
+      name: "E-mail: hello@tpvasconcelos.com"
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/tpvasconcelos/
       name: "LinkedIn: tpvasconcelos"
