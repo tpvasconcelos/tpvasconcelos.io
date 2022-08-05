@@ -13,7 +13,7 @@ hide:
 
 <div class="grid cards grid-professional-experience" markdown>
 - 👨🏽‍🏭 Machine Learning Software Engineer
-- 🌍 Amsterdam, Netherlands
+- 🇳🇱 Amsterdam, NL
 - 🗓️ Jun 2021 - Jul 2022
 </div>
 
@@ -27,7 +27,7 @@ company growing!
 
 <div class="grid cards grid-professional-experience" markdown>
 - 👨🏽‍🏭 Machine Learning Engineer
-- 🌍 Amsterdam, Netherlands
+- 🇳🇱 Amsterdam, NL
 - 🗓️ Jan 2019 - May 2021
 </div>
 
@@ -95,7 +95,7 @@ re-sampling from an updated posterior distribution).
 
 <div class="grid cards grid-professional-experience" markdown>
 - 👨🏽‍🏭 Software Engineer (Machine Learning)
-- 🌍 Gildford, UK
+- 🇬🇧 Gildford, UK
 - 🗓️ Jun 2016 - Mar 2018
 </div>
 
