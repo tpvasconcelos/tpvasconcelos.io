@@ -465,6 +465,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#beat-1yr-3mos" class="md-nav__link">
+    Beat (1yr 3mos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tiqets-2yrs-5mos" class="md-nav__link">
     Tiqets (2yrs 5mos)
   </a>
@@ -684,6 +691,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#beat-1yr-3mos" class="md-nav__link">
+    Beat (1yr 3mos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tiqets-2yrs-5mos" class="md-nav__link">
     Tiqets (2yrs 5mos)
   </a>
@@ -781,6 +795,19 @@
 <!-- Markdown content -->
 <h1 id="professional-experience">Professional experience<a class="headerlink" href="#professional-experience" title="Permanent link">&para;</a></h1>
 <p><a class="md-button md-button--primary" href="https://www.linkedin.com/in/tpvasconcelos/">Take a look at my LinkedIn profile! <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span></a></p>
+<h2 id="beat-1yr-3mos">Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 3mos)</span><a class="headerlink" href="#beat-1yr-3mos" title="Permanent link">&para;</a></h2>
+<div class="grid cards grid-professional-experience">
+<ul>
+<li>👨🏽‍🏭 Machine Learning Software Engineer</li>
+<li>🌍 Amsterdam, Netherlands</li>
+<li>🗓️ Jun 2021 - Jul 2022</li>
+</ul>
+</div>
+<p><a href="http://thebeat.co/">Beat</a> is the fastest-growing ride-hailing service in Latin America. My mission was to
+enable and accelerate Beat’s sustainable growth by developing and applying Data Science and Machine Learning
+solutions to detect and prevent fraudulent actions, reduce financial losses and abuses, and ensure a safe
+environment for all users of our platform. All of this while keeping the business metrics healthy and the
+company growing!</p>
 <h2 id="tiqets-2yrs-5mos">Tiqets <span style="color: gray; font-size: 16px; font-weight: normal;">(2yrs 5mos)</span><a class="headerlink" href="#tiqets-2yrs-5mos" title="Permanent link">&para;</a></h2>
 <div class="grid cards grid-professional-experience">
 <ul>
@@ -789,72 +816,74 @@
 <li>🗓️ Jan 2019 - May 2021</li>
 </ul>
 </div>
-<p>As a Machine Learning Engineer, I am part of <a href="https://www.tiqets.com/en/">Tiqets</a>&lsquo; core Data Team. I work
+<p>As a Machine Learning Engineer, I was part of <a href="https://www.tiqets.com/en/">Tiqets</a>&lsquo; core Data Team. I worked
 closely with data and business analysts, data engineers, as well as product owners and management team. I
-apply software development, data analytics, and machine learning to scale and operationalise statistical
+applied software development, data analytics, and machine learning to scale and operationalise statistical
 models and make the whole organisation more data-driven.</p>
 <h4 id="time-series-forecasting">📈 Time Series Forecasting<a class="headerlink" href="#time-series-forecasting" title="Permanent link">&para;</a></h4>
-<p>Operationalised sales forecasting by building a general and automated pipeline for pre-processing, model
-selection, evaluation, and periodic updating of forecasted values. Any of these jobs are distributed
-across <a href="https://github.com/celery/celery">Celery</a> workers running on pods in our Kubernetes cluster.
-Forecasted values are then exposed to our <a href="https://aws.amazon.com/redshift/">DWH</a> and can be visualised in
-our <a href="https://looker.com/">BI tool</a>. We used <a href="https://www.datadoghq.com/">DataDog</a> for monitoring. FYI: for
-the most part, <a href="https://en.wikipedia.org/wiki/Long_short-term_memory">LSTM</a> neural networks did not yield
-better results than classic approaches such as ARIMA and Exponential Smoothing, while an
-optimised <a href="https://facebook.github.io/prophet/">Prophet</a> model performed best.</p>
+<p>Operationalised and automated sales forecasting at Tiqets by deploying a generalised ML workflow to run
+pre-processing, model selection, evaluation, and periodic updating of forecasted values for multiple and
+varying business contexts. Each task was distributed across an array
+of <a href="https://github.com/celery/celery">Celery</a> workers deployed on our Kubernetes cluster. Forecasted values
+and model metadata was pushed to <a href="https://aws.amazon.com/redshift/">our DWH</a> and visualised by business
+stakeholders using our <a href="https://looker.com/">BI tool</a>. We used <a href="https://www.datadoghq.com/">DataDog</a>for both
+application and infrastructure monitoring. For the most
+part, <a href="https://en.wikipedia.org/wiki/Long_short-term_memory">LSTM</a> neural networks did not yield better
+results than classical approaches such as ARIMA and Exponential Smoothing, while an
+optimised <a href="https://facebook.github.io/prophet/">Prophet</a> model performed best for our type of data</p>
 <p><strong>Technologies:</strong> Kubernetes, ECR, S3, Redshift, SQLAlchemy, Alembic, DataDog, Celery, Redis, Dynaconf,
 FBProphet, mypy, pytests, scikit-learn, sphinx, statsmodels, pandas, numpy</p>
 <h4 id="recommender-system">🎥 Recommender System<a class="headerlink" href="#recommender-system" title="Permanent link">&para;</a></h4>
-<p>Improved recommendations across our platform by taking user-preference and item-similarity into account. Also
-enriched popularity-based heuristics for <a href="https://recsyswiki.com/wiki/Cold-start_problem">cold-start</a>
+<p>Improved recommendations across our platform by taking user-preference and item-similarity into account.
+Also, enriched popularity-based heuristics for <a href="https://recsyswiki.com/wiki/Cold-start_problem">cold-start</a>
 instances by taking distance and recency into account. A curated version of
-an <a href="https://aws.amazon.com/personalize/">Amazon Personalize</a> model now powers great part of recommendations
-at Tiqets. To help the Data Team iterate faster and with greater confidence on new versions of the
-recommender models, we also implemented
+an <a href="https://aws.amazon.com/personalize/">Amazon Personalize</a> model now powers a great part of recommendations
+at Tiqets. To help the Data Team iterate faster and with greater confidence on new versions of the recommender
+models, we also implemented
 a <a href="http://adrem.uantwerpen.be/bibrem/pubs/OfflineEvalJeunen2018.pdf">time-dependent offline evaluation</a>
 pipeline for recommender systems, curated for the e-commerce setting.</p>
 <h4 id="learning-to-rank-with-reinforcement-learning">🏆 Learning to Rank with Reinforcement Learning<a class="headerlink" href="#learning-to-rank-with-reinforcement-learning" title="Permanent link">&para;</a></h4>
 <p>To optimise any ranked list on our platform, I initially framed this task as a Supervised Machine-Learned
 Ranking problem, which involved comparing the predicted ranking to some ideal ranking using a metric such
-as <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain#Normalized_DCG">nDCG</a>. To improve on this
-iteration, I implemented Bayesian Reinforcement Learning to
-Rank <a href="https://en.wikipedia.org/wiki/Multi-armed_bandit">bandit</a> strategies (
+as <a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain#Normalized_DCG">nDCG</a> and fitting a simple
+heuristic to this. To improve on this iteration, I implemented Bayesian Reinforcement
+Learning-to-Rank <a href="https://en.wikipedia.org/wiki/Multi-armed_bandit">bandit</a> strategies (
 e.g. <a href="https://en.wikipedia.org/wiki/Thompson_sampling">Thompson sampling</a> ), which
 use <a href="https://conceptually.org/concepts/explore-or-exploit">explore and exploit</a> to continuously learn and
 improve the rankings. As new data is collected through our event-pipeline, we
-use <a href="https://airflow.apache.org/">Airflow</a> to frequently update the rankings (e.g. by re-sampling from the
-updated posterior distribution).</p>
+use <a href="https://airflow.apache.org/">Airflow</a> to frequently update item rankings on our platform (e.g. by
+re-sampling from an updated posterior distribution).</p>
 <h4 id="leadership-management-soft-skills">👨🏽‍💼 Leadership / Management / Soft Skills<a class="headerlink" href="#leadership-management-soft-skills" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Provided guidance and supervision to two University students working on their Masters Thesis. Both students
-  finished with outstanding grades (8/10 and 8.5/10).</li>
+<li>Helped management (CEO, COO, and CTO) and product owners in brainstorming sessions, defining company OKRs
+  and team KPIs, and led meaningful reporting initiatives and important ad-hoc analysis.</li>
+<li>The team grew from 3 to 15 people since I joined. I helped with the recruiting, assessing, and interviewing
+  of candidates (including the current Head of Data) as well as organising and attending career fairs.</li>
+<li>Provided guidance and supervision to two University students working on their Master’s Thesis. Both
+  students produced valuable projects for Tiqets and finished with outstanding grades (8/10 and 8.5/10).</li>
 <li>Integrated ideas from methodologies such
   as <a href="https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining">CRISP-DM</a> to bring
   structure to the Data Science project lifecycle. Helped creating and prioritising the Data Science backlog,
   as well as making weekly meetings more fruitful and actionable.</li>
-<li>Helped management (CEO, COO, and CTO) in brainstorming sessions, ad-hoc analysis, and reporting.</li>
 <li>Lead several company-wise trainings in general analytical competency and advanced
   BI (<a href="https://looker.com/">Looker</a>) practice.</li>
-<li>The Data Crew at Tiqets grew from 3 to 15 people since I joined. I helped with the recruiting, assessing,
-  and interviewing of candidates as well as organising and attending career fairs.</li>
 </ul>
 <h2 id="accelogress-1yr-10mos">Accelogress <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 10mos)</span><a class="headerlink" href="#accelogress-1yr-10mos" title="Permanent link">&para;</a></h2>
 <div class="grid cards grid-professional-experience">
 <ul>
-<li>👨🏽‍🏭 Machine Learning Engineer</li>
+<li>👨🏽‍🏭 Software Engineer (Machine Learning)</li>
 <li>🌍 Gildford, UK</li>
 <li>🗓️ Jun 2016 - Mar 2018</li>
 </ul>
 </div>
-<p>As a Machine Learning Engineer, I worked directly with
-the <a href="https://www.linkedin.com/in/ralfkernchen/?originalSubdomain=uk">CEO</a>
-and <a href="https://www.linkedin.com/in/mtalhaf/">Lead Developer</a> at <a href="https://www.accelogress.com/">Accelogress Ltd</a>
-, a software consultancy company developing solutions using machine learning and API technologies. For
-the <a href="https://save-a-space.com/">Save-a-Space</a> project, I lead the development of (1) the forecasting engine
-for car park availability - using a robust machine learning framework - and (2) the pre-processing engine and
-REST API to expose historical, real-time, and forecasted availability for multiple car-parks around the UK,
-to our mobile app and web dashboard.</p>
-<p><strong>Technologies:</strong> Docker, nginx, Gunicorn, Django REST Framework, AngularJS, scikit-learn, MySQL</p>
+<p>As a Machine Learning Engineer, I worked directly with the <a href="https://www.linkedin.com/in/ralfkernchen">CEO</a>
+and <a href="https://www.linkedin.com/in/mtalhaf">Lead Developer</a> at <a href="https://www.accelogress.com">Accelogress Ltd</a>, a
+software consultancy company developing solutions using machine learning and API technologies. For
+the <a href="https://save-a-space.com">Save-a-Space</a> project, I led the development of (1) the forecasting engine for
+car park availability using a robust machine-learning framework, and (2) a pre-processing layer and REST API
+to expose historical, realtime, and forecasted availability for multiple car parks around the UK, to our
+mobile app and web dashboards.</p>
+<p><strong>Technologies</strong>: Docker, nginx, Gunicorn, Django REST Framework, JavaScript, AngularJS, scikit-learn, MySQL</p>
 
 <!-- Source file information -->
 
