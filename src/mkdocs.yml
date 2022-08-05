@@ -27,7 +27,7 @@ site_dir: '../docs/'
 extra_css:
   - stylesheets/extra-font.css
   - stylesheets/extra-grid.css
-  - stylesheets/extra-grid-extra-grid.css
+  - stylesheets/extra-grid-extra.css
 theme:
   name: material
   custom_dir: overrides
