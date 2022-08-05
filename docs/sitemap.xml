@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://tomasvasconcelos.com/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <loc>https://tpvasconcelos.com/</loc>
+         <lastmod>2022-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tomasvasconcelos.com/contacts/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <loc>https://tpvasconcelos.com/contacts/</loc>
+         <lastmod>2022-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tomasvasconcelos.com/about/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <loc>https://tpvasconcelos.com/oss-projects/</loc>
+         <lastmod>2022-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tomasvasconcelos.com/about/education/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <loc>https://tpvasconcelos.com/about/</loc>
+         <lastmod>2022-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tomasvasconcelos.com/about/professional-experience/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <loc>https://tpvasconcelos.com/about/education/</loc>
+         <lastmod>2022-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tomasvasconcelos.com/about/research/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <loc>https://tpvasconcelos.com/about/professional-experience/</loc>
+         <lastmod>2022-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tpvasconcelos.com/about/research/</loc>
+         <lastmod>2022-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
