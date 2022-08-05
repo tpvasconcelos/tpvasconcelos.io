@@ -15,15 +15,6 @@ hide:
 
 <div class="grid cards" markdown>
 
--   #### ridgeplot
-
-    ---
-
-    Beautiful ridgeline plots in python
-    <p style="margin-bottom: 10px;"></p>
-
-    [:fontawesome-brands-github: tpvasconcelos/ridgeplot](https://github.com/tpvasconcelos/ridgeplot)
-
 - #### ridgeplot
 
     ---
