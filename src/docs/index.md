@@ -6,8 +6,6 @@ hide:
   - toc
 ---
 
-
-
 <div class="grid cards grid-homepage" markdown>
 
 -   ## About me...

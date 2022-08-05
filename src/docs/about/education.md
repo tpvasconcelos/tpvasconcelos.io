@@ -1,14 +1,13 @@
 ---
 title: Education
 description: About my education/academic background.
-hide:
-  - footer
 ---
 
 # Education
 
 !!! tip "TL;DR"
-    In 2017, I graduated from Royal Holloway University of London with a **First Class Honours degree in 
+
+    In 2017, I graduated from Royal Holloway University of London with a **First Class Honours degree in
     Physics**, followed by a **Mathematics graduate degree at King’s College London (KCL)**.
 
 ## Graduate - Mathematics

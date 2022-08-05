@@ -1,8 +1,6 @@
 ---
 title: Professional Experience
 description: About my professional experience.
-hide:
-  - footer
 ---
 
 # Professional experience
@@ -112,4 +110,5 @@ mobile app and web dashboards.
 ---
 
 !!! buzz "SEO (buzz)word-bank"
+
     Python | SQL | Docker | Big Data | Spark | AWS | Kubernetes | MLOps | CI/CD | Agile | Microservices

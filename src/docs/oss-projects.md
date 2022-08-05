@@ -3,7 +3,6 @@ title: OSS Projects
 description: Overview of my open-source projects
 hide:
   - navigation
-  - footer
   - toc
 ---
 
@@ -11,7 +10,6 @@ hide:
 
     **This page is currently under construction... 
     Apologies for the inconvenience!**
-
 
 <div class="grid cards" markdown>
 

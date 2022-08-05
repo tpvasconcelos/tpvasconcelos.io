@@ -1,7 +1,6 @@
 ---
 description: My contact details.
 hide:
-  - footer
   - toc
 ---
 

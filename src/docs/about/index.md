@@ -1,8 +1,6 @@
 ---
 title: About
-description: About me.
-hide:
-  - footer
+description: Summary about me, my professional experience, and my academic experience.
 ---
 
 # About me
@@ -32,7 +30,7 @@ hide:
   Physics**, followed by a **Mathematics graduate degree** at King’s College London (KCL).
 - During these years, I also [developed](https://github.com/tpvasconcelos/mdsea) some research experience in
   computational fluid dynamics and contributed
-  to [**a publication**](https://aip.scitation.org/doi/10.1063/1.5006035) in the field of theoretical 
+  to [**a publication**](https://aip.scitation.org/doi/10.1063/1.5006035) in the field of theoretical
   statistical mechanics.
 
 [Download my CV :fontawesome-solid-file-arrow-down:](../assets/files/CV_TPVasconcelos.pdf){: .md-button }

@@ -67,12 +67,13 @@ markdown_extensions:
   - smarty
   - toc:
       permalink: true
+      toc_depth: 2
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 
-      # Parameters
+# Parameters
 extra:
   generator: false
   social:
