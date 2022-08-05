@@ -1,0 +1,26 @@
+@media (min-width: 800px) {
+    div.grid-homepage li {
+        margin: 0 5px !important;
+    }
+}
+
+@media (min-width: 850px) {
+    div.grid-homepage li {
+        margin: 0 10px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    div.grid-homepage li {
+        margin: 0 20px !important;
+    }
+}
+
+div.grid-professional-experience {
+    grid-template-columns: auto auto auto !important;
+}
+
+div.grid-professional-experience li {
+    margin: 0 !important;
+    font-size: 15px !important;
+}

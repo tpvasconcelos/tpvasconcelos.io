@@ -25,9 +25,9 @@ nav:
 strict: true
 site_dir: '../docs/'
 extra_css:
-  - stylesheets/extra.css
-  - stylesheets/extra-grid.css
   - stylesheets/extra-font.css
+  - stylesheets/extra-grid.css
+  - stylesheets/extra-grid-extra-grid.css
 theme:
   name: material
   custom_dir: overrides
@@ -42,6 +42,7 @@ theme:
     - navigation.tracking
   palette:
     scheme: default
+    # TODO: change to "teal"
     primary: indigo
     accent: indigo
   font:
