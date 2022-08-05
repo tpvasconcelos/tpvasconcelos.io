@@ -14,7 +14,7 @@ hide:
 ## Graduate - Mathematics
 
 <div class="grid cards grid-professional-experience" markdown>
-- 🏛️ King’s College London, UK
+- 🇬🇧 King’s College London, UK
 - 🗓️ Sep 2017 - Aug 2018
 </div>
 
@@ -26,7 +26,7 @@ hide:
 
 <div class="grid cards grid-professional-experience" markdown>
 - 🎯 First Class Honours
-- 🏛️ Royal Holloway - Uni of London, UK
+- 🇬🇧 Royal Holloway - Uni of London, UK
 - 🗓️ Sep 2013 - Jun 2017
 </div>
 
@@ -41,7 +41,7 @@ hide:
 
 <div class="grid cards grid-professional-experience" markdown>
 - 🎯 93% GPA
-- 🏛️ River Ridge High School, USA
+- 🇺🇸 River Ridge High School, USA
 - 🗓️ Aug 2011 - May 2012
 </div>
 
@@ -52,7 +52,7 @@ hide:
 
 <div class="grid cards grid-professional-experience" markdown>
 - 🎯 80% GPA
-- 🏛️ Escola Salesiana de Manique, Portugal
+- 🇵🇹 Escola Salesiana de Manique, PT
 - 🗓️ Sep 2008 - Jun 2011
 </div>
 
