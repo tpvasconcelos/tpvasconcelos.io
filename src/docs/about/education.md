@@ -5,17 +5,18 @@ hide:
   - footer
 ---
 
+# Education
 
 !!! tip "TL;DR"
-    - In 2017, I graduated from Royal Holloway University of London with a First Class Honours degree in 
-    Physics, followed by the Mathematics graduate degree at King’s College London.
-
+    - In 2017, I graduated from Royal Holloway University of London with a **First Class Honours** degree in 
+    Physics, followed by the Mathematics graduate degree at **King’s College London**.
 
 ## Graduate - Mathematics
 
-🏛️ King’s College London, United Kingdom
-
-🗓️ Sep 2017 - Aug 2018
+<div class="grid cards grid-professional-experience" markdown>
+- 🏛️ King’s College London, UK
+- 🗓️ Sep 2017 - Aug 2018
+</div>
 
 - Developed a robust mathematical foundation for further studies and research in theoretical physics.
 - Refined my mathematical intuition to interpret and build models for simple and complex systems.
@@ -23,11 +24,11 @@ hide:
 
 ## Bachelor of Science - Physics
 
-🏛️ Royal Holloway, University of London, United Kingdom
-
-🗓️ Sep 2013 - Jun 2017
-
-🎯 First Class Honours
+<div class="grid cards grid-professional-experience" markdown>
+- 🎯 First Class Honours
+- 🏛️ Royal Holloway - Uni of London, UK
+- 🗓️ Sep 2013 - Jun 2017
+</div>
 
 - Developed the intuition to identify relevant laws and principles and apply appropriate mathematical tools
   and approximations when working on complex problems.
@@ -38,21 +39,21 @@ hide:
 
 ## High School - Exchange Year
 
-🏛️ River Ridge High School, USA
-
-🗓️ Aug 2011 - May 2012
-
-🎯 93% GPA
+<div class="grid cards grid-professional-experience" markdown>
+- 🎯 93% GPA
+- 🏛️ River Ridge High School, USA
+- 🗓️ Aug 2011 - May 2012
+</div>
 
 - Took part in a one-year [exchange program](https://afs.org/) on my last year of high-school.
 - Top grades for mathematics, physics, and chemistry with scores ranging between 95% and 100%.
 
 ## High School - Science Track
 
-🏛️ Escola Salesiana de Manique, Portugal
-
-🗓️ Sep 2008 - Jun 2011
-
-🎯 80% GPA
+<div class="grid cards grid-professional-experience" markdown>
+- 🎯 80% GPA
+- 🏛️ Escola Salesiana de Manique, Portugal
+- 🗓️ Sep 2008 - Jun 2011
+</div>
 
 - Ranked in the 97th percentile for the Physics & Chemistry national exam.

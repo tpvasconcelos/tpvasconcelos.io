@@ -5,21 +5,17 @@ hide:
   - footer
 ---
 
-!!! tip "TL;DR"
-    - I help teams and companies deliver value-driven solutions to data science problems, **fast!**
-    - I have hands-on experience in **solving real business-problems** using techniques from descriptive
-      analytics, Bayesian inference, time series forecasting, recommender systems, reinforcement learning, 
-      and many others.
+# Professional experience
 
+[Take a look at my LinkedIn profile! :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
 
+## Tiqets <span style="color: gray; font-size: 16px; font-weight: normal;">(2yrs 5mos)</span>
 
-## Tiqets
-
-👨🏽‍🏭 Machine Learning Engineer
-
-🌍 Amsterdam, Netherlands
-
-🗓️ Jan 2019 - Present
+<div class="grid cards grid-professional-experience" markdown>
+- 👨🏽‍🏭 Machine Learning Engineer
+- 🌍 Amsterdam, Netherlands
+- 🗓️ Jan 2019 - May 2021
+</div>
 
 As a Machine Learning Engineer, I am part of [Tiqets](https://www.tiqets.com/en/)' core Data Team. I work
 closely with data and business analysts, data engineers, as well as product owners and management team. I
@@ -78,13 +74,13 @@ updated posterior distribution).
 - The Data Crew at Tiqets grew from 3 to 15 people since I joined. I helped with the recruiting, assessing,
   and interviewing of candidates as well as organising and attending career fairs.
 
-## Accelogress
+## Accelogress <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 10mos)</span>
 
-👨🏽‍🏭 Machine Learning Engineer
-
-🌍 Gildford, UK
-
-🗓️ Jun 2016 - Mar 2018
+<div class="grid cards grid-professional-experience" markdown>
+- 👨🏽‍🏭 Machine Learning Engineer
+- 🌍 Gildford, UK
+- 🗓️ Jun 2016 - Mar 2018
+</div>
 
 As a Machine Learning Engineer, I worked directly with
 the [CEO](https://www.linkedin.com/in/ralfkernchen/?originalSubdomain=uk)

@@ -5,39 +5,41 @@ site_author: Tomas Pereira de Vasconcelos <hello@tpvasconcelos.com>
 site_url: https://tpvasconcelos.com
 
 
-# Repository
-repo_name: tpvasconcelos.io
-repo_url: https://github.com/tpvasconcelos/tpvasconcelos.io
-edit_uri: ''
-
-
 # Copyright
 copyright: 'Copyright &copy; 2020 - 2022 Tomas Pereira de Vasconcelos'
 
 
 # Navigation
 nav:
-    - Home: index.md
-    - About:
+  - Home: index.md
+  - About:
       - about/index.md
       - about/professional-experience.md
       - about/education.md
       - about/research.md
-    - Contacts: contacts.md
+  - OSS: oss-projects.md
+  - Contacts: contacts.md
 
 
 # Configuration
 strict: true
 site_dir: '../docs/'
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/extra-grid.css
+  - stylesheets/extra-font.css
 theme:
   name: material
   custom_dir: overrides
   locale: en
   language: en
   features:
-    - navigation.sections
     - navigation.instant
+    - navigation.sections
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
   palette:
     scheme: default
     primary: indigo
@@ -56,6 +58,7 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - meta
   - smarty
   - toc:
@@ -65,7 +68,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 
-# Parameters
+      # Parameters
 extra:
   generator: false
   social:
