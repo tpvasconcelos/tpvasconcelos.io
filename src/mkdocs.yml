@@ -28,6 +28,7 @@ extra_css:
   - stylesheets/extra-font.css
   - stylesheets/extra-grid.css
   - stylesheets/extra-grid-extra.css
+  - stylesheets/extra-admonition-buzz.css
 theme:
   name: material
   custom_dir: overrides
@@ -60,6 +61,8 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
   - meta
   - smarty
   - toc:
