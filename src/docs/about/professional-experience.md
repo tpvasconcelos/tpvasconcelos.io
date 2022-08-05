@@ -7,7 +7,20 @@ description: About my professional experience.
 
 [Take a look at my LinkedIn profile! :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
 
-## Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 3mos)</span>
+## Nike <span style="color: gray; font-size: 16px; font-weight: normal;">(Ongoing...)</span>
+
+<div class="grid cards grid-professional-experience" markdown>
+- 👨🏽‍🏭 Machine Learning Engineer (Contractor)
+- 🇳🇱 Hilversum, NL
+- 🗓️ Aug 2022 - Present
+</div>
+
+Currently working as a contractor at Nike's European Headquarters. As a Machine Learning Engineer I develop
+and evaluate statistical models for long-term [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing)
+and forecasting Nike's future consumer demand as well as developing and maintaining pipelines to deliver these
+results to LTs on a regular basis.
+
+## Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 2mos)</span>
 
 <div class="grid cards grid-professional-experience" markdown>
 - 👨🏽‍🏭 Machine Learning Software Engineer
@@ -20,6 +33,40 @@ enable and accelerate Beat’s sustainable growth by developing and applying Dat
 solutions to detect and prevent fraudulent actions, reduce financial losses and abuses, and ensure a safe
 environment for all users of our platform. All of this while keeping the business metrics healthy and the
 company growing!
+
+#### 🔧 Feature Store Deployment (w/ Feast)
+
+Led the development and implementation of
+a [Feature Store](https://www.tecton.ai/blog/what-is-a-feature-store/) solution to serve all ML and Analytics
+teams at Beat. Started by evaluating managed solutions such
+as [Databricks](https://docs.databricks.com/applications/machine-learning/feature-store/index.html),
+and [SageMaker](https://aws.amazon.com/sagemaker/feature-store/), conducting a two-week trial
+of [Tecton](https://www.tecton.ai/), and finally settling for [Feast](https://feast.dev/) as the registry and
+serving layers. Deployed the solution end-to-end on our Kubernetes cluster using our data-lake
+and [Trino](https://trino.io/) as the offline store, [ElastiCache](https://aws.amazon.com/elasticache/redis/)
+as the online store, and a low-latency gRPC Java service. Worked closely with Feast’s dev team by providing
+feedback and [**contributions**](https://github.com/feast-dev/feast/issues?q=mentions:tpvasconcelos) to the
+open-source project. Currently working on standardising batch transformations in Fraud.
+
+#### 💳 Fraud Prevention
+
+Led the productionisation of a fraud prevention system by (1) designing the solution’s architecture, (2)
+validating the assumptions and performance estimations of Data Scientists, (3) developing and deploying an
+ML ([Argo](https://argoproj.github.io/workflows/)) workflow that computes risk scores and pushes them to a
+Kafka topic, to be ingested to a fast-store ([Aerospike](https://aerospike.com/)) by a BE system, (4)
+configured monitoring for the infrastructure and application with [Prometheus](https://prometheus.io/)
+and [Grafana](https://grafana.com/), and (5) designing and running an online controlled experiment.
+
+#### 🚖 Fraud Prediction
+
+Worked with another Data Scientist on a fraud prediction problem where the labels were sparse, biased,
+noisy, and
+mostly [positive and unlabelled (PU)](https://link.springer.com/article/10.1007/s10994-020-05877-5). We
+considered and explored several modeling options from naive binary classification with gradient boosting
+models to more robust [active-learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning))
+approaches. The latest implementation lies somewhere in the middle, based on an iterative semi-supervised
+learning solution that yields twice as many fraud cases as the previous system while keeping precision
+extremely high (as per the pre-defined acceptance criteria).
 
 ## Tiqets <span style="color: gray; font-size: 16px; font-weight: normal;">(2yrs 5mos)</span>
 
