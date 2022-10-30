@@ -7,18 +7,34 @@ description: About my professional experience.
 
 [Take a look at my LinkedIn profile! :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
 
-## Nike <span style="color: gray; font-size: 16px; font-weight: normal;">(Ongoing...)</span>
+
+## Independent Contractor
+
+Having worked in the industry for a few years and on a broad range of data science and machine learning 
+projects, I have developed a strong understanding of the data science lifecycle and the challenges that
+come with it. I have accumulated experience in areas such as data engineering, data science, predictive
+analytics, machine learning engineering, software engineering, and solutions architecture. I have also
+developed a strong appreciation for the importance of understanding the business context and how difficult
+it can be to effectively translate business problems into data science solutions.
+
+As an independent contractor, I now help companies and teams to deliver value-driven solutions to their
+data science and machine learning problems. Take a look at the following sections to learn more about
+some of the projects I have worked on.
+
+[Reach out! :fontawesome-solid-paper-plane:](mailto:hello@tpvasconcelos.com){: .md-button .md-button--secondary }
+
+### Nike <span style="color: gray; font-size: 16px; font-weight: normal;">(Ongoing...)</span>
 
 <div class="grid cards grid-professional-experience" markdown>
-- 👨🏽‍🏭 Machine Learning Engineer (Contractor)
+- 👨🏽‍🏭 Senior Machine Learning Engineer
 - 🇳🇱 Hilversum, NL
 - 🗓️ Aug 2022 - Present
 </div>
 
-Currently working as a contractor at Nike's European Headquarters. As a Machine Learning Engineer I develop
-and evaluate statistical models for long-term [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing)
-and forecasting Nike's future consumer demand as well as developing and maintaining pipelines to deliver these
-results to LTs on a regular basis.
+Currently working with Nike as a Machine Learning Engineer, where I develop, evaluate, and improve statistical
+models for long-term forecasting and [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing) of Nike’s
+future consumer demand. I also develop and maintain the production pipelines that help us deliver these 
+insights to the leadership teams on time and on a regular basis.
 
 ## Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 2mos)</span>
 
