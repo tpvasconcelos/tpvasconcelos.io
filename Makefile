@@ -39,6 +39,11 @@ init: clean-all ## initialise development environment
 	$(PYTHON) -m pip install mkdocs==1.3.1 mkdocs-material==8.3.9
 
 
+.PHONY: serve
+serve: ## serve mkdocs
+	$(MAKE) --directory=src serve
+
+
 .PHONY: build
 build: ## build mkdocs
 	$(MAKE) --directory=src build

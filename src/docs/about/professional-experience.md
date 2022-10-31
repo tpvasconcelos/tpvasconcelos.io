@@ -31,10 +31,11 @@ some of the projects I have worked on.
 - 🗓️ Aug 2022 - Present
 </div>
 
-Currently working with Nike as a Machine Learning Engineer, where I develop, evaluate, and improve statistical
-models for long-term forecasting and [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing) of Nike’s
-future consumer demand. I also develop and maintain the production pipelines that help us deliver these 
-insights to the leadership teams on time and on a regular basis.
+Currently working with [Nike](https://www.nike.com/) as a Machine Learning Engineer, where I develop, 
+evaluate, and improve statistical models for long-term forecasting 
+and [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing) of Nike’s future consumer demand. I also
+develop and maintain the production pipelines that help us deliver these insights to the leadership teams on
+time and on a regular basis.
 
 ## Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 2mos)</span>
 

@@ -31,6 +31,11 @@ PYTHON ?= ../.venv/bin/python
 # ---  Main goals
 # ==============================================================
 
+.PHONY: serve
+serve: ## serve mkdocs
+	$(PYTHON) -m mkdocs serve
+
+
 .PHONY: build
 build: ## build mkdocs
 	$(PYTHON) -m mkdocs build
