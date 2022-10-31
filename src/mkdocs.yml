@@ -26,6 +26,7 @@ nav:
 strict: true
 site_dir: '../docs/'
 extra_css:
+  - stylesheets/extra.css
   - stylesheets/extra-font.css
   - stylesheets/extra-grid.css
   - stylesheets/extra-grid-extra.css
