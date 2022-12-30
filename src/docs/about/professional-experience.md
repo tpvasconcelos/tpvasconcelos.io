@@ -13,7 +13,7 @@ description: About my professional experience.
 Having worked in the industry for a few years and on a broad range of data science and machine learning 
 projects, I have developed a strong understanding of the data science lifecycle and the challenges that
 come with it. I have accumulated experience in areas such as data engineering, data science, predictive
-analytics, machine learning engineering, software engineering, and solutions architecture. I have also
+analytics, machine learning engineering, software engineering, and systems architecture. I have also
 developed a strong appreciation for the importance of understanding the business context and how difficult
 it can be to effectively translate business problems into data science solutions.
 
@@ -31,11 +31,11 @@ some of the projects I have worked on.
 - 🗓️ Aug 2022 - Present
 </div>
 
-Currently working with [Nike](https://www.nike.com/) as a Machine Learning Engineer, where I develop, 
+Currently working with [Nike](https://www.nike.com/) as a Senior Machine Learning Engineer, where I develop, 
 evaluate, and improve statistical models for long-term forecasting 
 and [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing) of Nike’s future consumer demand. I also
-develop and maintain the production pipelines that help us deliver these insights to the leadership teams on
-time and on a regular basis.
+develop and maintain the production pipelines that help us deliver these insights to global leadership and
+planning teams on time and on a regular basis.
 
 ## Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 2mos)</span>
 
