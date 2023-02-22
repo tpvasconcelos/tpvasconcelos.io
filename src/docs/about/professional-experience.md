@@ -34,8 +34,8 @@ some of the projects I have worked on.
 Currently working with [Nike](https://www.nike.com/) as a Senior Machine Learning Engineer, where I develop, 
 evaluate, and improve statistical models for long-term forecasting 
 and [demand sensing](https://en.wikipedia.org/wiki/Demand_sensing) of Nike’s future consumer demand. I also
-develop and maintain the production pipelines that help us deliver these insights to global leadership and
-planning teams on time and on a regular basis.
+develop and maintain the production pipelines that help us deliver these insights to ELT members and multiple 
+planning teams around the globe on time and on a regular basis.
 
 ## Beat <span style="color: gray; font-size: 16px; font-weight: normal;">(1yr 2mos)</span>
 
