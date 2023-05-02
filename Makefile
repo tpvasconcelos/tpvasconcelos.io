@@ -36,7 +36,7 @@ init: clean-all ## initialise development environment
 	python3.9 -m pip install --upgrade pip
 	python3.9 -m venv .venv
 	$(PYTHON) -m pip install --upgrade pip setuptools wheel
-	$(PYTHON) -m pip install mkdocs==1.3.1 mkdocs-material==8.3.9
+	$(PYTHON) -m pip install "mkdocs==1.*" "mkdocs-material==9.*"
 
 
 .PHONY: serve
