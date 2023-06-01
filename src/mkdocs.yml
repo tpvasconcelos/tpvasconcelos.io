@@ -4,9 +4,9 @@ site_description: An (aspiring) grandmaster of the Data Science Lifecycle.
 site_author: Tomas Pereira de Vasconcelos <hello@tpvasconcelos.com>
 site_url: https://tpvasconcelos.com
 
-
-# Copyright
-copyright: 'Copyright &copy; 2020 - 2022 Tomas Pereira de Vasconcelos'
+copyright: >
+  Copyright &copy; 2020 - 2023 Tomas Pereira de Vasconcelos –
+  <a href="#__consent">Change cookie settings</a>
 
 
 # Navigation
@@ -43,6 +43,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - search.suggest
   palette:
     scheme: default
     # TODO: change to "teal"
@@ -53,9 +54,6 @@ theme:
     code: Roboto Mono
   favicon: assets/images/logo.png
   logo: assets/images/logo.png
-  analytics:
-    # Google Analytics
-    gtag: G-278027779
 
 
 # Extensions
@@ -75,7 +73,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 
-# Parameters
+# Extra parameters
 extra:
   generator: false
   social:
@@ -91,3 +89,17 @@ extra:
     - icon: fontawesome/brands/stack-overflow
       link: https://stackoverflow.com/users/6028742/tpvasconcelos
       name: "Stack Overflow: tpvasconcelos"
+  analytics:
+    provider: google
+    property: G-XMP86N4E0H
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - manage
+      - reject
+      - accept

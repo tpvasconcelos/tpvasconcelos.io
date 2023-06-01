@@ -33,12 +33,12 @@ PYTHON ?= ../.venv/bin/python
 
 .PHONY: serve
 serve: ## serve mkdocs
-	$(PYTHON) -m mkdocs serve
+	$(PYTHON) -m mkdocs serve --strict --verbose
 
 
 .PHONY: build
 build: ## build mkdocs
-	$(PYTHON) -m mkdocs build
+	$(PYTHON) -m mkdocs build --strict --verbose
 	printf "tpvasconcelos.com" > ../docs/CNAME
 
 
