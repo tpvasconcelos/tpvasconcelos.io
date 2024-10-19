@@ -3,8 +3,6 @@ title: About
 description: Summary about me, my professional experience, and my academic experience.
 ---
 
-# About me
-
 [Let's connect on LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
 [Download my CV (PDF) :fontawesome-solid-file-arrow-down:](../assets/files/CV_TPVasconcelos.pdf){: .md-button }
 
