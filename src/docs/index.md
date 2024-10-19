@@ -2,7 +2,6 @@
 description: The homepage of my personal website.
 hide:
   - navigation
-  - footer
   - toc
 ---
 

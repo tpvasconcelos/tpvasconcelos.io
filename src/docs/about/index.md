@@ -5,21 +5,15 @@ description: Summary about me, my professional experience, and my academic exper
 
 # About me
 
-## 🚀 Driven
+## 👨🏽‍💻 Professional profile (summary)
+- Experienced **Senior Machine Learning Engineer** and reliable **Technical Lead** with a proven track record of transforming complex Data Science problems into high-quality production-ready software solutions.
+- Having worked in the software industry for **+8 years** and on a broad range of machine learning projects, I have developed a strong understanding of the data science lifecycle and the challenges that come with it.
+- From machine learning, MLOps, software, and data engineering, to solutions architecture and systems design… I have worn many hats while helping teams solve real business problems and deliver value-driven solutions to ML problems using techniques ranging from time-series forecasting, recommender systems, reinforcement learning, anomaly detection, Bayesian inference, and many others…
+- As a Tech Lead and a Senior Software Engineer, my main responsibility is ensuring my teams are able to iterate quickly _**without**_ breaking things! I advocate and educate Data Science teams on the importance of **software engineering principles and best practices**, and how to refactor safely and efficiently.
 
-- An (aspiring) grandmaster of the [Data](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) [Science](http://public.dhe.ibm.com/software/data/sw-library/services/ASUM.pdf) [Lifecycle](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/).
-
-## ⚡ Professional experience
-
-- I have developed into a **mature, reliable, and resourceful engineer**, equipped to solve complex machine learning and software engineering problems.
-- From machine learning engineer to solutions architect, data engineer, and data scientist… I have worn many hats while helping teams and companies **deliver value-driven solutions** to predictive analytics and data science problems.
-- I have hands-on experience in **solving real business problems** using techniques from time-series forecasting, recommender systems, reinforcement learning, Bayesian inference, and many others.
+## 👨🏽‍🎓 Academic experience (summary)
+- First Class Honours degree in Physics, followed by a graduate degree in Mathematical Physics.
+- Research experience in computational fluid dynamics and [a publication](https://aip.scitation.org/doi/10.1063/1.5006035) in theoretical statistical mechanics.
 
 [Let's connect on LinkedIn! :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
-
-## 📚 Academic experience
-
-- In 2017, I graduated from Royal Holloway University of London with a **First Class Honours degree in Physics**, followed by a **Mathematics graduate degree** at King’s College London (KCL).
-- During these years, I also developed some research experience in [computational fluid dynamics](https://github.com/tpvasconcelos/mdsea) and contributed to [**a publication**](https://aip.scitation.org/doi/10.1063/1.5006035) in the field of theoretical statistical mechanics.
-
 [Download my CV :fontawesome-solid-file-arrow-down:](../assets/files/CV_TPVasconcelos.pdf){: .md-button }
