@@ -7,8 +7,7 @@ description: About my education/academic background.
 
 !!! tip "TL;DR"
 
-    In 2017, I graduated from Royal Holloway University of London with a **First Class Honours degree in
-    Physics**, followed by a **Mathematics graduate degree at King’s College London (KCL)**.
+    In 2017, I graduated from Royal Holloway University of London with a **First Class Honours degree in Physics**, followed by a **Mathematics graduate degree at King’s College London (KCL)**.
 
 ## Graduate - Mathematics
 
@@ -29,10 +28,8 @@ description: About my education/academic background.
 - 🗓️ Sep 2013 - Jun 2017
 </div>
 
-- Developed the intuition to identify relevant laws and principles and apply appropriate mathematical tools
-  and approximations when working on complex problems.
-- Exposed to advanced experimental methods in collection of experimental data, evaluating its significance,
-  drawing relevant conclusions, and calculating the significant statistics.
+- Developed the intuition to identify relevant laws and principles and apply appropriate mathematical tools and approximations when working on complex problems.
+- Exposed to advanced experimental methods in collection of experimental data, evaluating its significance, drawing relevant conclusions, and calculating the significant statistics.
 - Developed several scientific computing projects with a focus on data analysis and fluid dynamics.
 - Experience in communicating experimental results and producing clear and accurate reports.
 
@@ -55,4 +52,4 @@ description: About my education/academic background.
 - 🗓️ Sep 2008 - Jun 2011
 </div>
 
-- Ranked in the 97th percentile for the Physics & Chemistry national exam.
+- Ranked in the 97th percentile (top 3%) for the Physics & Chemistry national exam.
