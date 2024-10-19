@@ -44,10 +44,29 @@ theme:
     - navigation.tracking
     - search.suggest
   palette:
-    scheme: default
-    # TODO: change to "teal"
-    primary: indigo
-    accent: indigo
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   font:
     text: Roboto
     code: Roboto Mono
@@ -59,21 +78,31 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - footnotes
   - md_in_html
+  - pymdownx.betterem
+  - pymdownx.critic
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
   - meta
   - smarty
   - toc:
       permalink: true
+      title: On this page
       toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+plugins:
+  - search
+  - social
 
 # Extra parameters
 extra:

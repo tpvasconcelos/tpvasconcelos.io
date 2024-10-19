@@ -33,7 +33,7 @@ PYTHON ?= ../.venv/bin/python
 
 .PHONY: serve
 serve: ## serve mkdocs
-	$(PYTHON) -m mkdocs serve --strict --verbose
+	$(PYTHON) -m mkdocs serve --strict
 
 
 .PHONY: build
