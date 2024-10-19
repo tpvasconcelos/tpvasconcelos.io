@@ -5,8 +5,8 @@ description: About my professional experience.
 
 # Professional experience
 
-[Take a look at my LinkedIn profile! :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
-[Reach out! :fontawesome-solid-paper-plane:](mailto:hello@tpvasconcelos.com){: .md-button .md-button--secondary }
+[Let's connect on LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
+[Download my CV :fontawesome-solid-file-arrow-down:](../assets/files/CV_TPVasconcelos.pdf){: .md-button }
 
 ## Nike <span style="color: gray; font-size: 16px; font-weight: normal;">(2 years)</span>
 
