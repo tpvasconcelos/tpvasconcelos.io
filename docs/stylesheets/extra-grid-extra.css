@@ -22,5 +22,10 @@ div.grid-professional-experience {
 
 div.grid-professional-experience li {
     margin: 0 !important;
+    padding: 12px !important;
     font-size: 15px !important;
+    /* Align text in the center (both horizontally and vertically) */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }

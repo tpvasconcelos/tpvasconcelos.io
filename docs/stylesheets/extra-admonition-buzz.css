@@ -1,17 +1,17 @@
 :root {
-  --md-admonition-icon--buzz: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M17.4 9C17 7.8 16.2 7 15 6.5V5h-1v1.4h-.4c-1.1 0-2 .4-2.8 1.2l-.4.4L9 7.5c-.3-.1-.6-.2-1-.2-.6 0-1.2.2-1.7.6-.6.4-.9.9-1.1 1.4-.2.7-.2 1.3 0 2 .3.7.6 1.2 1.1 1.5-.4 1.5-.1 2.8 1 3.9.8.8 1.7 1.2 2.8 1.2.5 0 .8 0 1.1-.1.6.8 1.4 1.3 2.4 1.3.3 0 .7 0 1-.1.6-.2 1-.6 1.4-1.1.4-.6.6-1.1.6-1.7 0-.4 0-.7-.1-1l-.5-1.6.6-.4c.8-.8 1.2-1.9 1.1-3.1H19V9h-1.6m-9.7 2.3c-.6-.3-.8-.7-.6-1.3.2-.6.6-.8 1.2-.6l3.2 1.2c-1.6.8-2.8 1-3.8.7m6.3 5.6c-.6.2-1 0-1.3-.6-.3-1-.1-2.2.7-3.8l1.2 3.1c.2.7 0 1.1-.6 1.3m1.2-5.3-.6-1.6v-.1l-.3-.3h-.1L12.6 9c.4-.3.8-.5 1.3-.5s1 .2 1.4.6c.4.4.6.8.6 1.3-.2.3-.4.8-.7 1.2Z'%3E%3C/path%3E%3C/svg%3E");
+  --md-admonition-icon--robot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M22 14h-1c0-3.87-3.13-7-7-7h-1V5.73A2 2 0 1 0 10 4c0 .74.4 1.39 1 1.73V7h-1c-3.87 0-7 3.13-7 7H2c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h1v1a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1M9.7 15.45l-.73.73-1.47 1.47-2.2-2.2c-.4-.4-.4-1.06 0-1.45.41-.42 1.06-.42 1.47 0l.73.72.73-.72c.41-.42 1.06-.42 1.47 0 .4.39.4 1.05 0 1.45m9 0-.73.73-1.47 1.47-2.2-2.2c-.4-.4-.4-1.06 0-1.45.41-.42 1.06-.42 1.47 0l.73.72.73-.72c.41-.42 1.06-.42 1.47 0 .4.39.4 1.05 0 1.45'/%3E%3C/svg%3E");;
 }
-.md-typeset .admonition.buzz,
-.md-typeset details.buzz {
-  border-color: rgb(189, 154, 15);
+.md-typeset .admonition.robot,
+.md-typeset details.robot {
+  border-color: rgb(15, 137, 189);
 }
-.md-typeset .buzz > .admonition-title,
-.md-typeset .buzz > summary {
-  background-color: rgba(189, 154, 15, 0.1);
+.md-typeset .robot > .admonition-title,
+.md-typeset .robot > summary {
+  background-color: rgba(15, 137, 189, 0.1);
 }
-.md-typeset .buzz > .admonition-title::before,
-.md-typeset .buzz > summary::before {
-  background-color: rgb(189, 154, 15);
-  -webkit-mask-image: var(--md-admonition-icon--buzz);
-          mask-image: var(--md-admonition-icon--buzz);
+.md-typeset .robot > .admonition-title::before,
+.md-typeset .robot > summary::before {
+  background-color: rgb(15, 137, 189);
+  -webkit-mask-image: var(--md-admonition-icon--robot);
+          mask-image: var(--md-admonition-icon--robot);
 }
