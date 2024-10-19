@@ -136,9 +136,12 @@
         </label>
       {% endif %}
       <!-- EDITED: This conditional was added in -->
+      {% if nav_item.children is none and nav_item in nav %}
+      {% else %}
         <a href="{{ nav_item.url | url }}" class="md-nav__link md-nav__link--active">
           {{ render_content(nav_item) }}
         </a>
+      {% endif %}
       {% if toc %}
         {% include "partials/toc.html" %}
       {% endif %}

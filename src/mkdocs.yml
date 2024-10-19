@@ -1,11 +1,11 @@
 # Project information
 site_name: Tomas Pereira de Vasconcelos
-site_description: An (aspiring) grandmaster of the Data Science Lifecycle.
+site_description: Tomas Pereira de Vasconcelos
 site_author: Tomas Pereira de Vasconcelos <hello@tpvasconcelos.com>
 site_url: https://tpvasconcelos.com
 
 copyright: >
-  Copyright &copy; 2020 - 2023 Tomas Pereira de Vasconcelos –
+  Copyright &copy; 2020 - 2024 Tomas Pereira de Vasconcelos –
   <a href="#__consent">Change cookie settings</a>
 
 
@@ -60,6 +60,9 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences
   - meta

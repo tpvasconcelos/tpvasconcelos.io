@@ -1,5 +1,5 @@
 ---
-description: The homepage of my personal website.
+description: Tomas Pereira de Vasconcelos
 hide:
   - navigation
   - toc
