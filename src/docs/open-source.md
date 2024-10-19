@@ -1,5 +1,5 @@
 ---
-title: OSS Projects
+title: Open-source
 description: Overview of my open-source projects and contributions.
 ---
 
@@ -15,9 +15,14 @@ While maintaining this library, I have implemented [feature](https://github.com/
 
 ## Contributions to other projects
 
-I try to actively contribute to open-source projects in the Python and scientific computing ecosystems, with [significant](https://github.com/sktime/sktime/pull/5630) [contributions](https://github.com/feast-dev/feast/pull/2423) to high-profile projects such as [**sktime^7.8k:octicons-star-fill-16:^**](https://github.com/sktime/sktime) and [**Feast^5.6k:octicons-star-fill-16:^**](https://github.com/feast-dev/feast) and [smaller](https://github.com/apache/spark/pull/33185) [contributions](https://github.com/unionai-oss/pandera/issues/834) to projects like [**Apache Spark^39.5k:octicons-star-fill-16:^**](https://github.com/apache/spark) and [**pandera^3.3k:octicons-star-fill-16:^**](https://github.com/unionai-oss/pandera) . My contributions span from [identifying](https://github.com/vacanza/holidays/issues/1559) and [fixing](https://github.com/sktime/sktime/issues/5853) critical [bugs](https://github.com/bridgecrewio/checkov/pull/6738), to implementing substantial improvements like [speeding-up checkov](https://github.com/bridgecrewio/checkov/issues/6740) by up to 70%. Beyond code contributions, I also [participate](https://github.com/feast-dev/feast/pull/2517) in the open-source community through [code](https://github.com/sktime/sktime/pull/5592#issuecomment-1857745836) [reviews](https://github.com/sktime/sktime/pull/5834), [helping users](https://github.com/pypa/setuptools/issues/3214#issuecomment-1335569791) [troubleshoot issues](https://github.com/python-poetry/poetry/issues/429#issuecomment-754972771), and providing [context](https://github.com/pandas-dev/pandas/issues/51012#issuecomment-1743856513) and [feedback](https://github.com/psf/black/issues/3407#issuecomment-1410161309) where needed.
+I try to actively contribute to open-source projects in the Python and scientific computing ecosystems, with [significant](https://github.com/sktime/sktime/pull/5630) [contributions](https://github.com/feast-dev/feast/pull/2423) to high-profile projects such as [**sktime^7.8k:octicons-star-fill-16:^**](https://github.com/sktime/sktime) and [**Feast^5.6k:octicons-star-fill-16:^**](https://github.com/feast-dev/feast) and [smaller](https://github.com/apache/spark/pull/33185) [contributions](https://github.com/unionai-oss/pandera/issues/834) to projects like [**Apache Spark^39.5k:octicons-star-fill-16:^**](https://github.com/apache/spark) and [**pandera^3.3k:octicons-star-fill-16:^**](https://github.com/unionai-oss/pandera).
 
-## Other projects
+My contributions span from [identifying](https://github.com/vacanza/holidays/issues/1559) and [fixing](https://github.com/sktime/sktime/issues/5853) critical [bugs](https://github.com/bridgecrewio/checkov/pull/6738), to implementing substantial improvements like [speeding-up checkov](https://github.com/bridgecrewio/checkov/issues/6740) by up to 70%. Beyond code contributions, I also [participate](https://github.com/feast-dev/feast/pull/2517) in the open-source community through [code](https://github.com/sktime/sktime/pull/5592#issuecomment-1857745836) [reviews](https://github.com/sktime/sktime/pull/5834), [helping users](https://github.com/pypa/setuptools/issues/3214#issuecomment-1335569791) [troubleshoot issues](https://github.com/python-poetry/poetry/issues/429#issuecomment-754972771), and providing [context](https://github.com/pandas-dev/pandas/issues/51012#issuecomment-1743856513) and [feedback](https://github.com/psf/black/issues/3407#issuecomment-1410161309) where needed.
+
+## Smaller projects
+
+!!! note
+    These are project that I have enjoyed working on in the past, but (unfortunately) haven't had the time to maintain or contribute to recently.
 
 <div class="grid cards" markdown>
 

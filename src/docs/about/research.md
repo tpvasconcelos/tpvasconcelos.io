@@ -30,4 +30,4 @@ I have received excellent feedback from my supervisor and the evaluation panel r
 
 - **"Forecasting UK carpark availability"** / South East Physics Network  /  2016
 
-    Shared the results and findings of a project that aimed to forecast the carpark availability in major UK cities. The project started as a collaboration between South East Physics Network, Royal Holloway University of London, and Accelogress Ltd. I [continued](/about/professional-experience/#accelogress) working on this project as an independent contractor for Accelogress Ltd.
+    Shared the results and findings of a project that aimed to forecast the carpark availability in major UK cities. The project started as a collaboration between South East Physics Network, Royal Holloway University of London, and Accelogress Ltd. I [continued](/about/professional-experience/#accelogress-1yr-10mos) working on this project as an independent contractor for Accelogress Ltd.

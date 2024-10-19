@@ -6,7 +6,7 @@ description: Summary about me, my professional experience, and my academic exper
 # About me
 
 [Let's connect on LinkedIn :fontawesome-brands-linkedin:](https://www.linkedin.com/in/tpvasconcelos/){: .md-button .md-button--primary }
-[Download my CV :fontawesome-solid-file-arrow-down:](../assets/files/CV_TPVasconcelos.pdf){: .md-button }
+[Download my CV (PDF) :fontawesome-solid-file-arrow-down:](../assets/files/CV_TPVasconcelos.pdf){: .md-button }
 
 ## 👨🏽‍💻 Professional profile (summary)
 - Experienced **Senior Machine Learning Engineer** and reliable **Technical Lead** with a proven track record of transforming complex Data Science problems into high-quality production-ready software solutions.
