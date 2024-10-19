@@ -37,17 +37,14 @@ theme:
   language: en
   features:
     - navigation.instant
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - navigation.path
+    - navigation.indexes
     - search.suggest
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      primary: indigo
-      accent: indigo
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode

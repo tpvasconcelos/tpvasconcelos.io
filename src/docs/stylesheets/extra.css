@@ -5,3 +5,13 @@
 .md-typeset h1 {
     margin-bottom: 0.9rem;
 }
+
+h2 {
+    font-weight: bold !important;
+}
+
+/* Hide the toggle symbol (> or v) in the navigation bar */
+label.md-nav__link {
+    /*visibility: hidden;*/
+    display: none;
+}
