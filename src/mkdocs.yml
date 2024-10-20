@@ -25,11 +25,10 @@ nav:
 strict: true
 site_dir: '../docs/'
 extra_css:
+  - stylesheets/color.css
   - stylesheets/extra.css
-  - stylesheets/extra-font.css
-  - stylesheets/extra-grid.css
   - stylesheets/extra-grid-extra.css
-  - stylesheets/extra-admonition-buzz.css
+  - stylesheets/home-index.css
 theme:
   name: material
   custom_dir: overrides
@@ -43,27 +42,8 @@ theme:
     - navigation.indexes
     - search.suggest
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+    primary: white
+    accent: white
   font:
     text: Roboto
     code: Roboto Mono

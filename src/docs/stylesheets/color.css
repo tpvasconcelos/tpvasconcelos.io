@@ -1,0 +1,17 @@
+/* Override the color of some elements assuming the use of the `white` theme */
+
+.md-button {
+  color: hsla(0, 0%, 0%, 0.84) !important;
+}
+
+.md-button--primary {
+  color: hsla(210, 0%, 100%, 1) !important;
+  background-color: var(--md-primary-bg-color) !important;
+  border-color: var(--md-primary-bg-color) !important;
+}
+
+.md-button:hover, .md-button:focus {
+  color: hsla(210, 0%, 100%, 1) !important;
+  background-color: hsla(0, 0%, 0%, 0.67) !important;
+  border-color: hsla(0, 0%, 0%, 0.0) !important;
+}
