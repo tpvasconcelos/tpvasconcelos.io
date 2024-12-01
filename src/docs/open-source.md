@@ -7,7 +7,7 @@ description: Overview of my open-source projects and contributions.
 
 ## ridgeplot
 
-I am the author and maintainer of [**ridgeplot^75:octicons-star-fill-16:^**](https://github.com/tpvasconcelos/ridgeplot), a Python package that provides a simple interface for plotting beautiful and interactive [ridgeline plots](https://ridgeplot.readthedocs.io/en/stable/getting_started/getting_started.html) within the extensive [Plotly](https://plotly.com/python/) ecosystem. 
+I am the author and maintainer of [**ridgeplot^135:octicons-star-fill-16:^**](https://github.com/tpvasconcelos/ridgeplot), a Python package that provides a simple interface for plotting beautiful and interactive [ridgeline plots](https://ridgeplot.readthedocs.io/en/stable/getting_started/getting_started.html) within the extensive [Plotly](https://plotly.com/python/) ecosystem. 
 
 So far, the project has had up to [102k downloads](https://pypistats.org/packages/ridgeplot) in a month on PyPI, is used by [over 120](https://github.com/tpvasconcelos/ridgeplot/network/dependents?dependent_type=REPOSITORY) public GitHub repositories, and is a dependency of notable projects such as [**Shiny for Python^1.3k:octicons-star-fill-16:^**](https://github.com/posit-dev/py-shiny), [**Ploomber^3.5k:octicons-star-fill-16:^**](https://github.com/ploomber), and [**NiMARE^182:octicons-star-fill-16:^**](https://github.com/neurostuff/NiMARE). 
 
